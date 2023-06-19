@@ -4,14 +4,27 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WypozyczalniaGierProjekt"
+        xmlns:viewModel="clr-namespace:WypozyczalniaGierProjekt.MVVM.ViewModel" xmlns:customcontrols="clr-namespace:WypozyczalniaGierProjekt.CustomControls"
         mc:Ignorable="d"
         Height="600" Width="920"
         WindowStyle="none"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Background="Transparent"
-        AllowsTransparency="True"
+        AllowsTransparency="True" 
         MouseDown="Window_MouseDown">
+
+    <Window.DataContext>
+        <viewModel:LoginViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
+    </Window.Resources>
+
+    <Window.Visibility>
+        <Binding Path="IsViewVisible" Mode="TwoWay" Converter="{StaticResource BooleanToVisibility}"/>
+    </Window.Visibility>
 
     <Border CornerRadius="25">
         <Border.Background>
@@ -153,6 +166,7 @@
                                Margin="0,30,0,0"/>
 
                     <TextBox x:Name="txtUser"
+                             Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}"
                                FontSize="16"
                                FontWeight="Medium"
                                FontFamily="Poppins"
@@ -180,28 +194,21 @@
                                FontFamily="Poppins"
                                Margin="0,25,0,0"/>
 
-                    <PasswordBox x:Name="txtPass"
-                               FontSize="16"
+                    <customcontrols:BindablePasswordBox                                 Password="{Binding Password,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                   Height="28"
+                                   Margin="0,5,0,0">
+                    </customcontrols:BindablePasswordBox>
+
+                    <TextBlock Text="{Binding ErrorMessage}"
+                               Foreground="#d9abff"
+                               FontSize="15"
                                FontWeight="Medium"
                                FontFamily="Poppins"
-                               Foreground="White"
-                               CaretBrush="LightGray"
-                             BorderBrush="DarkGray"
-                             BorderThickness="0,0,0,1"
-                             Height="28"
-                             VerticalContentAlignment="Center"
-                             Margin="0,5,0,0"
-                             Padding="35,0,0,0">
-
-
-                        <PasswordBox.Background>
-                            <ImageBrush ImageSource="/Images/user6.png"
-                                        Stretch="Uniform"
-                                        AlignmentX="Left"/>
-                        </PasswordBox.Background>
-                    </PasswordBox>
+                               Margin="0,25,0,0"
+                               TextWrapping="Wrap"/>
 
                     <Button x:Name="btnLogin"
+                            Command="{Binding LoginCommand}"
                             BorderThickness="0"
                             Content="LOG IN"
                             Foreground="White"
@@ -210,8 +217,7 @@
                             FontFamily="Poppins"
                             Cursor="Hand"
                             Grid.Column="2"
-                            Margin="0,50,0,0"
-                            Click="btnLogin_Click">
+                            Margin="0,10,0,0">
 
                         <Button.Style>
                             <Style TargetType="Button">
