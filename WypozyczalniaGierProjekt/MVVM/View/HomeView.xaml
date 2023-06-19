@@ -1,0 +1,224 @@
+﻿<UserControl x:Class="WypozyczalniaGierProjekt.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WypozyczalniaGierProjekt.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="460" d:DesignWidth="800">
+    <StackPanel>
+        <TextBlock Text="Discover"
+                   Foreground="White"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"
+                   FontFamily="/Fonts/#Poppins"/>
+
+        <StackPanel Orientation="Horizontal"
+                    Margin="0,0,0,10">
+            <Border Width="400"
+                    Height="200">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#845EC2" Offset="0.0"/>
+                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,400,200"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Odkryj na nowo&#x0a;najgorętsze tytuły"
+                                   Foreground="White"
+                                   FontSize="26"
+                                   Margin="20,10,10,0"
+                                   FontFamily="/Fonts/#Poppins"/>
+
+                        <TextBlock Text="Przejdź do pełnej oferty"
+                                   Foreground="White"
+                                   FontSize="16.5"
+                                   Margin="20,10,10,0"
+                                   FontFamily="/Fonts/#Poppins"/>
+                    </StackPanel>
+
+                    <Image Width="179"
+                           Height="179"
+                           Source="/Images/game2.png"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Bottom"
+                           Margin="5,0,5,5"/>
+                </Grid>
+            </Border>
+
+            <Border Width="200" 
+                    Height="200"
+                    CornerRadius="10"
+                    Margin="45,0,0,0">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#FFC04F" Offset="0.0"/>
+                        <GradientStop Color="#F9F871" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Gorące"
+                                   Foreground="White"
+                                   FontSize="28"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Margin="0, 20,0,0"
+                                   FontFamily="/Fonts/#Poppins"/>
+
+                        <TextBlock Text="przeceny"
+                                   Foreground="White"
+                                   FontSize="28"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Margin="0, 80,0,0"
+                                   FontFamily="/Fonts/#Poppins"/>
+                    </StackPanel>
+
+                    <Image Width="200"
+                           Height="200"
+                           Source="/Images/hotsale.png"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="-3,-20,5,5"/>
+
+                </Grid>
+
+            </Border>
+        </StackPanel>
+
+        <StackPanel>
+
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="15,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Text="Najczęściej wybierane"
+                       Foreground="White"
+                       FontSize="20"
+                       HorizontalAlignment="Left"
+                       Margin="0,0,0,10"
+                       FontFamily="/Fonts/#Poppins"/>
+
+            <StackPanel Orientation="Horizontal">
+
+                <Grid>
+                    <Border Width="150"
+                        Height="150"
+                        Background="#00B89C"
+                        CornerRadius="10"
+                        Margin="0">
+
+                        <Image Width="180"
+                           Height="180"
+                           Source="/Images/Witcher.png"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="37,-10,0,0"/>
+                        
+                    </Border>
+
+                    <TextBlock Text="Wiedźmin 3&#x0a;  Dziki Gon"
+                       Foreground="#C4FCF0"
+                       FontSize="12"
+                       HorizontalAlignment="Left"
+                       Margin="7,10,0,10"
+                       FontFamily="/Fonts/#Poppins"/>
+
+                </Grid>
+
+                <Grid>
+                    <Border Width="150"
+                        Height="150"
+                        Background="#C4FCF0"
+                        CornerRadius="10"
+                        Margin="15,0,0,0">
+
+                        <Image Width="180"
+                           Height="180"
+                           Source="/Images/ellie2.png"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Bottom"
+                           Margin="0,-20,0,0"/>
+                    </Border>
+
+                    <TextBlock Text="The Last 3&#x0a;  Of Us"
+                       Foreground="#00B89C"
+                       FontSize="12"
+                       HorizontalAlignment="Right"
+                       Margin="0,100,8,10"
+                       FontFamily="/Fonts/#Poppins"/>
+                    
+                </Grid>
+
+                <Grid>
+                    <Border Width="150"
+                        Height="150"
+                        Background="#FCEAFF"
+                        CornerRadius="10"
+                        Margin="15,0,0,0">
+
+                        <Image Width="310"
+                           Height="290"
+                           Source="/Images/cbp.png"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="top"
+                           Margin="0,0,-45,0"/>
+                    </Border>
+
+                    <TextBlock Text="Cyberpunk &#x0a;      2077"
+                       Foreground="#F3B2FF"
+                       FontSize="12"
+                       HorizontalAlignment="Right"
+                       VerticalAlignment="Bottom"
+                       Margin="0,100,2,10"
+                       FontFamily="/Fonts/#Poppins"/>
+
+                </Grid>
+
+                <Grid>
+                    <Border Width="150"
+                        Height="150"
+                        Background="#F3B2FF"
+                        CornerRadius="10"
+                        Margin="15,0,0,0">
+
+
+                        <Image Width="310"
+                           Height="290"
+                           Source="/Images/hg.png"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="top"
+                           Margin="-90,-24,0,0"/>
+                    </Border>
+
+                    <TextBlock Text="Hogwarts &#x0a;   Legacy"
+                       Foreground="#FCEAFF"
+                       FontSize="12"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Bottom"
+                       Margin="30,0,0,20"
+                       FontFamily="/Fonts/#Poppins"/>
+
+                </Grid> 
+
+
+            </StackPanel>
+            
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>
