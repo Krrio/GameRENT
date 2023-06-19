@@ -5,17 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Security;
 using System.Windows.Input;
-
+using WypozyczalniaGierProjekt.MVVM.Model;
+using WypozyczalniaGierProjekt.Repositories;
+using System.Net;
+using System.Threading;
+using System.Security.Principal;
 
 namespace WypozyczalniaGierProjekt.MVVM.ViewModel
 {
-    internal class LoginViewModel : ViewModelBase
+    public class LoginViewModel : ViewModelBase
     {
         //Fields
-        private string _username="Username";
+        private string _username;
         private SecureString _password;
         private string _errorMessage;
         private bool _isViewVisible = true;
+
+        private IUserRepository userRepository;
 
         public string Username 
         { 
@@ -66,7 +72,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
             set
             {
                 _isViewVisible = value;
-                OnProperyChanged(nameof(_isViewVisible));
+                OnProperyChanged(nameof(IsViewVisible));
             }
         }
 
@@ -79,6 +85,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
         //Constructor
         public LoginViewModel()
         {
+            userRepository = new UserRepository();
             LoginCommand = new ViewModelCommand(ExecuteLoginCommand, CanExecuteLoginCommand);
             RecoverPasswordCommand = new ViewModelCommand(p=>ExecuteRecoverPassCommand("",""));
         }
@@ -87,7 +94,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
         {
             bool validData;
             if (string.IsNullOrWhiteSpace(Username) || Username.Length < 3 ||
-                Password == null || Password.Length < 3)
+                Password==null || Password.Length < 3)
                 validData = false;
             else 
                 validData = true;
@@ -96,7 +103,16 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
 
         private void ExecuteLoginCommand(object obj)
         {
-            throw new NotImplementedException();
+            var isValidUser = userRepository.AuthenticateUser(new NetworkCredential(Username, Password));
+            if(isValidUser)
+            {
+                Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity(Username), null);
+                IsViewVisible = false;
+            }
+            else
+            {
+                ErrorMessage = "* Invalid username or password";
+            }
         }
         private void ExecuteRecoverPassCommand(string username, string email)
         {

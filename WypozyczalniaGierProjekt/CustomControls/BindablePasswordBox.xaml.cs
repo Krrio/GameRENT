@@ -22,7 +22,8 @@ namespace WypozyczalniaGierProjekt.CustomControls
     public partial class BindablePasswordBox : UserControl
     {
 
-        public static readonly DependencyProperty PasswordProperty = DependencyProperty.Register("Password", typeof(SecureString), typeof(BindablePasswordBox));
+        public static readonly DependencyProperty PasswordProperty = 
+            DependencyProperty.Register("Password", typeof(SecureString), typeof(BindablePasswordBox));
 
         public SecureString Password
         {
@@ -47,3 +48,4 @@ namespace WypozyczalniaGierProjekt.CustomControls
         }
     }
 }
+

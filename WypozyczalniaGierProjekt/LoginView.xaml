@@ -4,7 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WypozyczalniaGierProjekt"
-        xmlns:viewModel="clr-namespace:WypozyczalniaGierProjekt.MVVM.ViewModel" xmlns:customcontrols="clr-namespace:WypozyczalniaGierProjekt.CustomControls"
+        xmlns:viewModel="clr-namespace:WypozyczalniaGierProjekt.MVVM.ViewModel"
+        xmlns:customcontrols="clr-namespace:WypozyczalniaGierProjekt.CustomControls"
         mc:Ignorable="d"
         Height="600" Width="920"
         WindowStyle="none"
@@ -216,7 +217,6 @@
                             FontSize="16"
                             FontFamily="Poppins"
                             Cursor="Hand"
-                            Grid.Column="2"
                             Margin="0,10,0,0">
 
                         <Button.Style>
