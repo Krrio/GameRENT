@@ -44,6 +44,7 @@
 
                     <TextBlock Text="LOG IN"
                                Foreground="White"
+                               FontWeight="Bold"
                                FontSize="10"
                                FontFamily="Poppins"
                                Grid.Column="0"
@@ -177,7 +178,7 @@
                                FontSize="15"
                                FontWeight="Medium"
                                FontFamily="Poppins"
-                               Margin="0,30,0,0"/>
+                               Margin="0,25,0,0"/>
 
                     <PasswordBox x:Name="txtPass"
                                FontSize="16"
@@ -200,6 +201,61 @@
                         </PasswordBox.Background>
                     </PasswordBox>
 
+                    <Button x:Name="btnLogin"
+                            BorderThickness="0"
+                            Content="LOG IN"
+                            Foreground="White"
+                            FontWeight="Medium"
+                            FontSize="16"
+                            FontFamily="Poppins"
+                            Cursor="Hand"
+                            Grid.Column="2"
+                            Margin="0,50,0,0"
+                            Click="btnLogin_Click">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#d9abff"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#c39ae6"/>
+
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                Margin="0,15,0,0">
+
+                        <TextBlock Text="Forgot password?"
+                               Foreground="LightGray"
+                               FontSize="15"
+                               FontWeight="Medium"
+                               FontFamily="Poppins"/>
+
+                    <TextBlock Text="Reset"
+                               Foreground="White"
+                               FontSize="15"
+                               FontWeight="Medium"
+                               FontFamily="Poppins"
+                               Cursor="Hand"
+                               Margin="8,0,0,0"/>
+
+                    </StackPanel>
 
                 </StackPanel>
                 
