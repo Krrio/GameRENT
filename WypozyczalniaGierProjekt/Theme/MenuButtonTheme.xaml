@@ -7,16 +7,22 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="RadioButton">
-                        <Grid VerticalAlignment="Stretch"
-                              HorizontalAlignment="Stretch"
-                              Background="{TemplateBinding Background}">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}">
+                            <Border.CornerRadius>
+                                <CornerRadius TopLeft="0" TopRight="10" BottomRight="10" BottomLeft="0" />
+                            </Border.CornerRadius>
 
-                            <TextBlock Text="{TemplateBinding Property=Content}"
-                                       VerticalAlignment="Center"
-                                       Margin="50,0,0,0"
-                                       FontFamily="/Fonts/#Poppins"/>
+                            <Grid VerticalAlignment="Stretch"
+                                  HorizontalAlignment="Stretch">
 
-                        </Grid>
+                                <TextBlock Text="{TemplateBinding Property=Content}"
+                                           VerticalAlignment="Center"
+                                           Margin="50,0,0,0"
+                                           FontFamily="/Fonts/#Poppins"/>
+                            </Grid>
+                        </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
@@ -30,6 +36,5 @@
                 <Setter Property="Background" Value="#22202f"/>
             </Trigger>
         </Style.Triggers>
-        
     </Style>
 </ResourceDictionary>
