@@ -7,6 +7,7 @@
         xmlns:viewModel="clr-namespace:WypozyczalniaGierProjekt.MVVM.ViewModel"
         mc:Ignorable="d"
         Height="600" Width="920"
+        WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
@@ -63,14 +64,14 @@
                              IsChecked="True"
                              Command="{Binding HomeViewCommand}"/>
 
-                <RadioButton Content="Discovery"
+                <RadioButton Content="Odkryj"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding DiscoveryViewCommand}" Checked="RadioButton_Checked"/>
 
-                <RadioButton Content="Featured"
+                <RadioButton Content="Jak to działa?"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
