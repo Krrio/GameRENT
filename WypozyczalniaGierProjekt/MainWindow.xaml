@@ -56,7 +56,7 @@
                      Margin="10,0,45,0" MouseLeftButtonDown="minimize" ToolTip="Zminimalizuj"/>
             
 
-            <Image Source="/Images/user10.png"
+            <Image Source="/Images/user12.png"
                    Grid.Row="0"
                    Grid.Column="1"
                    Height="30"

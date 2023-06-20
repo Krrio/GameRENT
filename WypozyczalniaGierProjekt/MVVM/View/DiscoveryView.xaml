@@ -16,26 +16,28 @@
                    HorizontalAlignment="Center"
                    Margin="0,15,0,0"/>
 
-            <StackPanel Orientation="Horizontal"
+
+
+        <StackPanel Orientation="Horizontal"
                     Margin="100,50,0,10">
-                <Border Width="200"
+            <Border Width="200"
                     Height="90">
 
-                    <Border.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
                         <GradientStop Color="#3C3A4C" Offset="0.0"/>
                         <GradientStop Color="#272537" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
+                    </LinearGradientBrush>
+                </Border.Background>
 
-                    <Border.Clip>
-                        <RectangleGeometry RadiusX="10"
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
                                        RadiusY="10"
                                        Rect="0,0,200,90"/>
-                    </Border.Clip>
+                </Border.Clip>
 
-                    <Grid>
-                        <StackPanel>
+                <Grid>
+                    <StackPanel>
                         <TextBlock Text="Wybieraj spośród kolekcji 1000 gier"
                                    Foreground="White"
                                    FontSize="16"
@@ -53,10 +55,10 @@
                                        TextAlignment="Center"/>
                     </StackPanel>
 
-                    </Grid>
-                </Border>
-                              
-            </StackPanel>
+                </Grid>
+            </Border>
+
+        </StackPanel>
 
         <StackPanel Orientation="Horizontal"
                     HorizontalAlignment="Right"
@@ -69,7 +71,7 @@
                         <GradientStop Color="#272537" Offset="0.0"/>
                         <GradientStop Color="#3C3A4C" Offset="1"/>
                     </LinearGradientBrush>
-                </Border.Background> 
+                </Border.Background>
 
                 <Border.Clip>
                     <RectangleGeometry RadiusX="10"
@@ -86,7 +88,7 @@
                                    FontFamily="/Fonts/#Poppins"
                                        TextWrapping="Wrap"
                                        TextAlignment="Center"/>
-                        
+
                         <TextBlock Text="Krok 2"
                                    Foreground="LightGray"
                                    FontSize="14"
@@ -113,7 +115,7 @@
                         <GradientStop Color="#3C3A4C" Offset="0.0"/>
                         <GradientStop Color="#272537" Offset="1"/>
                     </LinearGradientBrush>
-                </Border.Background> 
+                </Border.Background>
 
                 <Border.Clip>
                     <RectangleGeometry RadiusX="10"
