@@ -229,5 +229,26 @@
   <ItemGroup>
     <Resource Include="Images\user10.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\road.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\smoke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\steam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\storm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\treasure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pick.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

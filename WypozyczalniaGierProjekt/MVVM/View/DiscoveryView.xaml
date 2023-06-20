@@ -5,8 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WypozyczalniaGierProjekt.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800"
-             Background="#1B1B1B">
+             d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
 
         <TextBlock Text="Jak to działa?"
@@ -16,6 +15,188 @@
                    FontFamily="Poppins"
                    HorizontalAlignment="Center"
                    Margin="0,15,0,0"/>
+
+            <StackPanel Orientation="Horizontal"
+                    Margin="100,50,0,10">
+                <Border Width="200"
+                    Height="90">
+
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#3C3A4C" Offset="0.0"/>
+                        <GradientStop Color="#272537" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,200,90"/>
+                    </Border.Clip>
+
+                    <Grid>
+                        <StackPanel>
+                        <TextBlock Text="Wybieraj spośród kolekcji 1000 gier"
+                                   Foreground="White"
+                                   FontSize="16"
+                                   Margin="20,10,10,0"
+                                   FontFamily="/Fonts/#Poppins"
+                                       TextWrapping="Wrap"
+                                       TextAlignment="Center"/>
+
+                        <TextBlock Text="Krok 1"
+                                   Foreground="LightGray"
+                                   FontSize="14"
+                                   Margin="0,5,0,0"
+                                   FontFamily="/Fonts/#Poppins"
+                                       TextWrapping="Wrap"
+                                       TextAlignment="Center"/>
+                    </StackPanel>
+
+                    </Grid>
+                </Border>
+                              
+            </StackPanel>
+
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="0,0,100,0">
+            <Border Width="200"
+                    Height="115">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#272537" Offset="0.0"/>
+                        <GradientStop Color="#3C3A4C" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background> 
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,200,115"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Wybierz grę, która spełni Twoje oczekiwania"
+                                   Foreground="White"
+                                   FontSize="16"
+                                   Margin="10,10,10,0"
+                                   FontFamily="/Fonts/#Poppins"
+                                       TextWrapping="Wrap"
+                                       TextAlignment="Center"/>
+                        
+                        <TextBlock Text="Krok 2"
+                                   Foreground="LightGray"
+                                   FontSize="14"
+                                   Margin="0,5,0,0"
+                                   FontFamily="/Fonts/#Poppins"
+                                       TextWrapping="Wrap"
+                                       TextAlignment="Center"/>
+
+                    </StackPanel>
+
+                </Grid>
+            </Border>
+
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    Margin="100,0,0,0">
+            <Border Width="200"
+                    Height="115">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#3C3A4C" Offset="0.0"/>
+                        <GradientStop Color="#272537" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background> 
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,200,115"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Kliknij &quot;Dodaj do koszyka&quot; i sfinalizuj transakcję"
+                                   Foreground="White"
+                                   FontSize="16"
+                                   Margin="10,10,10,0"
+                                   FontFamily="/Fonts/#Poppins"
+                                       TextWrapping="Wrap"
+                                       TextAlignment="Center"/>
+
+                        <TextBlock Text="Krok 3"
+                                   Foreground="LightGray"
+                                   FontSize="14"
+                                   Margin="0,5,0,0"
+                                   FontFamily="/Fonts/#Poppins"
+                                       TextWrapping="Wrap"
+                                       TextAlignment="Center"/>
+
+                    </StackPanel>
+
+                </Grid>
+            </Border>
+
+        </StackPanel>
+
+        <StackPanel>
+
+            <Image Source="/Images/road.png"
+                           HorizontalAlignment="Right"
+               VerticalAlignment="Center"
+               Height="110"
+               Width="110"
+                           Margin="0,-110,195,0"/>
+
+            <Image Source="/Images/road.png"
+                           HorizontalAlignment="Right"
+               VerticalAlignment="Center"
+               Height="110"
+               Width="110"
+                           Margin="0,-110,90,0"/>
+
+        </StackPanel>
+
+        <StackPanel>
+
+            <Image Source="/Images/Delivery.png"
+                           HorizontalAlignment="Right"
+               VerticalAlignment="Center"
+               Height="80"
+               Width="80"
+                           Margin="0,-120,215,0"/>
+
+        </StackPanel>
+
+        <StackPanel>
+
+            <Image Source="/Images/treasure.png"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Top"
+               Height="100"
+               Width="100"
+               Margin="0,-340,140,0"/>
+
+        </StackPanel>
+
+        <StackPanel>
+
+            <Image Source="/Images/pick.png"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Height="90"
+               Width="90"
+               Margin="150,-220,0,0"/>
+
+        </StackPanel>
+
 
     </StackPanel>
 </UserControl>

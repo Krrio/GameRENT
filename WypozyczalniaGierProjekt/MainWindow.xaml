@@ -59,10 +59,11 @@
             <Image Source="/Images/user10.png"
                    Grid.Row="0"
                    Grid.Column="1"
-                   Height="40"
-                   Width="40"
+                   Height="30"
+                   Width="30"
                    HorizontalAlignment="Center"
-                   Margin="0,0,220,0"/>
+                   VerticalAlignment="Center"
+                   Margin="0,0,240,0"/>
 
             <StackPanel Grid.Row="1">
 
@@ -74,14 +75,14 @@
                              IsChecked="True"
                              Command="{Binding HomeViewCommand}"/>
 
-                <RadioButton Content="Odkryj"
+                <RadioButton Content="Jak to działa?"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding DiscoveryViewCommand}" Checked="RadioButton_Checked"/>
 
-                <RadioButton Content="Jak to działa?"
+                <RadioButton Content="Odkryj"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
