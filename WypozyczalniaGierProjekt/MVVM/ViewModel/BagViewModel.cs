@@ -1,8 +1,10 @@
 ﻿using System.ComponentModel;
+using System.Windows.Input;
+using WypozyczalniaGierProjekt.MVVM.ViewModel;
 
 namespace WypozyczalniaGierProjekt.MVVM.ViewModel
 {
-    public class BagViewModel : INotifyPropertyChanged
+    internal class BagViewModel : INotifyPropertyChanged
     {
         private string imie;
         public string Imie
@@ -122,5 +124,8 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        public ViewModelCommand confirmViewCommand;
+
     }
 }

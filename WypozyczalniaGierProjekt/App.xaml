@@ -25,6 +25,10 @@
                 <view:BagView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:ConfirmViewModel}">
+                <view:ConfirmView/>
+            </DataTemplate>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

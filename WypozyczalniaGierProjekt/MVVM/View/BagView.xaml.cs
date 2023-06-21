@@ -66,7 +66,6 @@ namespace WypozyczalniaGierProjekt.MVVM.View
                 CarImage7.Visibility = Visibility.Visible;
                 CarImage.BeginAnimation(Canvas.MarginProperty, animation);
 
-                CarTranslation.BeginAnimation(TranslateTransform.XProperty, animation);
 
                 //MessageBox.Show("Dane zostały potwierdzone.", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
             }
