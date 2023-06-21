@@ -236,5 +236,96 @@
             </Image.RenderTransform>
         </Image>
 
+        <Image x:Name="CarImage1"
+       Source="/Images/box.png"
+       Width="60"
+       Height="60"
+       HorizontalAlignment="Center"
+       VerticalAlignment="Center"
+       Margin="350,-1200,0,800"
+       Opacity="1">
+            <Image.RenderTransform>
+                <TranslateTransform x:Name="CarTranslation1" X="0"/>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image x:Name="CarImage2"
+       Source="/Images/box.png"
+       Width="60"
+       Height="60"
+       HorizontalAlignment="Center"
+       VerticalAlignment="Center"
+       Margin="100,-1070,0,800"
+       Opacity="1">
+            <Image.RenderTransform>
+                <TranslateTransform x:Name="CarTranslation2" X="0"/>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image x:Name="CarImage3"
+       Source="/Images/box.png"
+       Width="60"
+       Height="60"
+       HorizontalAlignment="Center"
+       VerticalAlignment="Center"
+       Margin="-100,-1490,0,800"
+       Opacity="1">
+            <Image.RenderTransform>
+                <TranslateTransform x:Name="CarTranslation3" X="0"/>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image x:Name="CarImage4"
+       Source="/Images/box.png"
+       Width="60"
+       Height="60"
+       HorizontalAlignment="Center"
+       VerticalAlignment="Center"
+       Margin="-200,-1290,0,800"
+       Opacity="1">
+            <Image.RenderTransform>
+                <TranslateTransform x:Name="CarTranslation4" X="0"/>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image x:Name="CarImage5"
+       Source="/Images/box.png"
+       Width="60"
+       Height="60"
+       HorizontalAlignment="Center"
+       VerticalAlignment="Center"
+       Margin="-550,-1110,0,800"
+       Opacity="1">
+            <Image.RenderTransform>
+                <TranslateTransform x:Name="CarTranslation5" X="0"/>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image x:Name="CarImage6"
+       Source="/Images/box.png"
+       Width="60"
+       Height="60"
+       HorizontalAlignment="Center"
+       VerticalAlignment="Center"
+       Margin="-430,-1190,0,800"
+       Opacity="1">
+            <Image.RenderTransform>
+                <TranslateTransform x:Name="CarTranslation6" X="0"/>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image x:Name="CarImage7"
+       Source="/Images/box.png"
+       Width="60"
+       Height="60"
+       HorizontalAlignment="Center"
+       VerticalAlignment="Center"
+       Margin="450,-1070,0,800"
+       Opacity="1">
+            <Image.RenderTransform>
+                <TranslateTransform x:Name="CarTranslation7" X="0"/>
+            </Image.RenderTransform>
+        </Image>
+
     </StackPanel>
 </UserControl>

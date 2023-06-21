@@ -39,13 +39,34 @@ namespace WypozyczalniaGierProjekt.MVVM.View
 
 
                 ThicknessAnimation animation = new ThicknessAnimation();
-                animation.To = new Thickness(0, 300, 0, 0); // Przesunięcie o 300 pikseli w dół
+                animation.To = new Thickness(0, 900, 0, 0); // Przesunięcie o 300 pikseli w dół
                 animation.Duration = TimeSpan.FromSeconds(1.5); // Czas trwania animacji
 
                 CarImage.Visibility = Visibility.Visible;
                 CarImage.BeginAnimation(Canvas.MarginProperty, animation);
 
-                //CarTranslation.BeginAnimation(TranslateTransform.XProperty, animation);
+                CarImage1.Visibility = Visibility.Visible;
+                CarImage.BeginAnimation(Canvas.MarginProperty, animation);
+
+                CarImage2.Visibility = Visibility.Visible;
+                CarImage.BeginAnimation(Canvas.MarginProperty, animation);
+
+                CarImage3.Visibility = Visibility.Visible;
+                CarImage.BeginAnimation(Canvas.MarginProperty, animation);
+
+                CarImage4.Visibility = Visibility.Visible;
+                CarImage.BeginAnimation(Canvas.MarginProperty, animation);
+
+                CarImage5.Visibility = Visibility.Visible;
+                CarImage.BeginAnimation(Canvas.MarginProperty, animation);
+
+                CarImage6.Visibility = Visibility.Visible;
+                CarImage.BeginAnimation(Canvas.MarginProperty, animation);
+
+                CarImage7.Visibility = Visibility.Visible;
+                CarImage.BeginAnimation(Canvas.MarginProperty, animation);
+
+                CarTranslation.BeginAnimation(TranslateTransform.XProperty, animation);
 
                 //MessageBox.Show("Dane zostały potwierdzone.", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
             }
