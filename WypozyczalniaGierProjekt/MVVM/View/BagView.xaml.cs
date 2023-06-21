@@ -27,10 +27,13 @@ namespace WypozyczalniaGierProjekt.MVVM.View
                 string.IsNullOrWhiteSpace(viewModel.Email) ||
                 string.IsNullOrWhiteSpace(viewModel.NumerTelefonu))
             {
-                MessageBox.Show("Wypełnij wszystkie pola przed potwierdzeniem.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorTextBlock.Text = "Wypełnij wszystkie pola przed potwierdzeniem.";
+                ErrorTextBlock.Visibility = Visibility.Visible;
             }
             else
             {
+                ErrorTextBlock.Visibility = Visibility.Collapsed;
+
                 // Wykonaj operacje po potwierdzeniu
                 // ...
                 MessageBox.Show("Dane zostały potwierdzone.", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
