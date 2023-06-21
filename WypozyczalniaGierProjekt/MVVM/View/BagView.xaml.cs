@@ -1,6 +1,9 @@
 ﻿using System.Windows.Controls;
 using System.Windows;
 using WypozyczalniaGierProjekt.MVVM.ViewModel;
+using System.Windows.Media.Animation;
+using System.Windows.Media;
+using System;
 
 namespace WypozyczalniaGierProjekt.MVVM.View
 {
@@ -34,9 +37,17 @@ namespace WypozyczalniaGierProjekt.MVVM.View
             {
                 ErrorTextBlock.Visibility = Visibility.Collapsed;
 
-                // Wykonaj operacje po potwierdzeniu
-                // ...
-                MessageBox.Show("Dane zostały potwierdzone.", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                ThicknessAnimation animation = new ThicknessAnimation();
+                animation.To = new Thickness(0, 300, 0, 0); // Przesunięcie o 300 pikseli w dół
+                animation.Duration = TimeSpan.FromSeconds(1.5); // Czas trwania animacji
+
+                CarImage.Visibility = Visibility.Visible;
+                CarImage.BeginAnimation(Canvas.MarginProperty, animation);
+
+                //CarTranslation.BeginAnimation(TranslateTransform.XProperty, animation);
+
+                //MessageBox.Show("Dane zostały potwierdzone.", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
     }

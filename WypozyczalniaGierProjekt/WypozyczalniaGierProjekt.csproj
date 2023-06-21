@@ -274,5 +274,17 @@
   <ItemGroup>
     <Resource Include="Images\flag1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\carbag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\carbag1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\carbag3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\box.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

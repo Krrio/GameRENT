@@ -222,5 +222,19 @@
                 <RotateTransform Angle="-15"/>
             </Image.RenderTransform>
         </Image>
+
+        <Image x:Name="CarImage"
+       Source="/Images/box.png"
+       Width="60"
+       Height="60"
+       HorizontalAlignment="Center"
+       VerticalAlignment="Center"
+       Margin="250,-1100,0,800"
+       Opacity="1">
+            <Image.RenderTransform>
+                <TranslateTransform x:Name="CarTranslation" X="0"/>
+            </Image.RenderTransform>
+        </Image>
+
     </StackPanel>
 </UserControl>
