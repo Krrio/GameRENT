@@ -56,7 +56,34 @@
                      Margin="-10,20,0,0"
                      Style="{StaticResource ModernForm}"
                      FontFamily="/Fonts/#Poppins"/>
-                        
+
+                        <TextBox Width="250"
+                     Height="40"
+                     VerticalContentAlignment="Center"
+                     HorizontalAlignment="Left"
+                     Margin="200,-40,0,0"
+                     Style="{StaticResource ModernForm}"
+                     FontFamily="/Fonts/#Poppins"/>
+
+                        <TextBox
+                     Width="250"
+                     Height="40"
+                     VerticalContentAlignment="Center"
+                     HorizontalAlignment="Left"
+                     Margin="-10,20,0,0"
+                     Style="{StaticResource ModernForm}"
+                     FontFamily="/Fonts/#Poppins"/>
+
+                        <TextBox
+                     Width="100"
+                     Height="40"
+                     VerticalContentAlignment="Center"
+                     HorizontalAlignment="Left"
+                     Margin="225,-40,0,0"
+                     Style="{StaticResource ModernForm}"
+                            Tag="Kod pocztowy"
+                     FontFamily="/Fonts/#Poppins"/>
+
                     </StackPanel>
 
                 </Grid>
