@@ -7,7 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
+
     <StackPanel>
+
         <TextBlock Text="Koszyk"
                    Foreground="White"
                    FontSize="28"
@@ -22,8 +24,8 @@
 
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#845EC2" Offset="0.0"/>
-                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                        <GradientStop Color="#4E3087" Offset="0.0"/>
+                        <GradientStop Color="#8473F5" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
 
@@ -35,23 +37,54 @@
 
                 <Grid>
                     <StackPanel>
-                        <TextBlock Text="Odkryj na nowo&#x0a;najgorętsze tytuły"
+                        <TextBlock Text="Ostatnia prosta&#x0a;...i gry będą u Ciebie!"
                                    Foreground="White"
                                    FontSize="26"
                                    Margin="20,10,10,0"
                                    FontFamily="/Fonts/#Poppins"/>
 
-                        <TextBlock Text="Przejdź do pełnej oferty"
+                        <TextBlock Text="Wypełnij dane a my zajemiemy się resztą."
                                    Foreground="White"
                                    FontSize="16.5"
                                    Margin="20,10,10,0"
                                    FontFamily="/Fonts/#Poppins"/>
+
+                        <TextBox Width="250"
+                     Height="40"
+                     VerticalContentAlignment="Center"
+                     HorizontalAlignment="Left"
+                     Margin="-10,20,0,0"
+                     Style="{StaticResource ModernForm}"
+                     FontFamily="/Fonts/#Poppins"/>
+                        
                     </StackPanel>
 
                 </Grid>
             </Border>
 
         </StackPanel>
+
+        <Image Source="/Images/flag.png"
+               Height="800"
+               Width="80"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"
+               Margin="580,-410,0,0">
+            <Image.RenderTransform>
+                <RotateTransform Angle="15"/>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image Source="/Images/flag1.png"
+               Height="800"
+               Width="80"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"
+               Margin="400,-780,0,0">
+            <Image.RenderTransform>
+                <RotateTransform Angle="-15"/>
+            </Image.RenderTransform>
+        </Image>
 
     </StackPanel>
 
