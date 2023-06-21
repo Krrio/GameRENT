@@ -6,10 +6,49 @@
              xmlns:local="clr-namespace:WypozyczalniaGierProjekt.MVVM.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <Style TargetType="{x:Type TextBox}" x:Key="ModernForm">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type TextBox}">
+                            <Grid>
+                                <Rectangle Fill="#4E3087" RadiusX="10" RadiusY="10"/>
+                                <TextBox Margin="5"
+                                         Text="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}}"
+                                         BorderThickness="0"
+                                         Background="Transparent"
+                                         VerticalContentAlignment="Center"
+                                         Padding="5"
+                                         Foreground="#CFCFCF"
+                                         x:Name="SearchBox"/>
 
-
+                                <TextBlock IsHitTestVisible="False"
+                                           Text="{TemplateBinding Tag}"
+                                           VerticalAlignment="Center"
+                                           HorizontalAlignment="Left"
+                                           Margin="10,0,0,0"
+                                           FontSize="11"
+                                           Foreground="#CFB5FF">
+                                    <TextBlock.Style>
+                                        <Style TargetType="{x:Type TextBlock}">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Text, ElementName=SearchBox}" Value="">
+                                                    <Setter Property="Visibility" Value="Visible"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                            <Setter Property="Visibility" Value="Hidden"/>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </UserControl.Resources>
     <StackPanel>
-
         <TextBlock Text="Koszyk"
                    Foreground="White"
                    FontSize="28"
@@ -43,52 +82,116 @@
                                    Margin="20,10,10,0"
                                    FontFamily="/Fonts/#Poppins"/>
 
-                        <TextBlock Text="Wypełnij dane a my zajemiemy się resztą."
+                        <TextBlock Text="Wypełnij dane a my zajmiemy się resztą."
                                    Foreground="White"
                                    FontSize="16.5"
                                    Margin="20,10,10,0"
                                    FontFamily="/Fonts/#Poppins"/>
 
-                        <TextBox Width="250"
-                     Height="40"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Left"
-                     Margin="-10,20,0,0"
-                     Style="{StaticResource ModernForm}"
-                     FontFamily="/Fonts/#Poppins"/>
+                        <TextBox Width="150"
+         Height="40"
+         VerticalContentAlignment="Center"
+         HorizontalAlignment="Left"
+         Margin="15,20,0,0"
+         Style="{StaticResource ModernForm}"
+         Tag="Imię"
+         FontFamily="/Fonts/#Poppins"
+         Text="{Binding Imie, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
-                        <TextBox Width="250"
-                     Height="40"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Left"
-                     Margin="200,-40,0,0"
-                     Style="{StaticResource ModernForm}"
-                     FontFamily="/Fonts/#Poppins"/>
+                        <TextBox Width="150"
+                                 Height="40"
+                                 VerticalContentAlignment="Center"
+                                 HorizontalAlignment="Left"
+                                 Margin="180,-40,0,0"
+                                 Style="{StaticResource ModernForm}"
+                                 Tag="Nazwisko"
+                                 FontFamily="/Fonts/#Poppins"
+                                 Text="{Binding Nazwisko, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
-                        <TextBox
-                     Width="250"
-                     Height="40"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Left"
-                     Margin="-10,20,0,0"
-                     Style="{StaticResource ModernForm}"
-                     FontFamily="/Fonts/#Poppins"/>
+                        <TextBox Width="150"
+                                 Height="40"
+                                 VerticalContentAlignment="Center"
+                                 HorizontalAlignment="Left"
+                                 Margin="15,10,0,0"
+                                 Style="{StaticResource ModernForm}"
+                                 Tag="Miejscowość"
+                                 FontFamily="/Fonts/#Poppins"
+                                 Text="{Binding Miejscowosc, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
-                        <TextBox
-                     Width="100"
-                     Height="40"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Left"
-                     Margin="225,-40,0,0"
-                     Style="{StaticResource ModernForm}"
-                            Tag="Kod pocztowy"
-                     FontFamily="/Fonts/#Poppins"/>
+                        <TextBox Width="100"
+                                 Height="40"
+                                 VerticalContentAlignment="Center"
+                                 HorizontalAlignment="Left"
+                                 Margin="180,-40,0,0"
+                                 Style="{StaticResource ModernForm}"
+                                 Tag="Kod pocztowy"
+                                 FontFamily="/Fonts/#Poppins"
+                                 Text="{Binding KodPocztowy, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
+                        <TextBox Width="150"
+                                 Height="40"
+                                 VerticalContentAlignment="Center"
+                                 HorizontalAlignment="Left"
+                                 Margin="15,10,0,0"
+                                 Style="{StaticResource ModernForm}"
+                                 Tag="Ulica"
+                                 FontFamily="/Fonts/#Poppins"
+                                 Text="{Binding Ulica, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+                        <TextBox Width="125"
+                                 Height="40"
+                                 VerticalContentAlignment="Center"
+                                 HorizontalAlignment="Left"
+                                 Margin="180,-40,0,0"
+                                 Style="{StaticResource ModernForm}"
+                                 Tag="Numer mieszkania"
+                                 FontFamily="/Fonts/#Poppins"
+                                 Text="{Binding NumerMieszkania, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+                        <TextBox Width="150"
+                                 Height="40"
+                                 VerticalContentAlignment="Center"
+                                 HorizontalAlignment="Left"
+                                 Margin="15,10,0,0"
+                                 Style="{StaticResource ModernForm}"
+                                 Tag="E-mail"
+                                 FontFamily="/Fonts/#Poppins"
+                                 Text="{Binding Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+                        <TextBox Width="125"
+                                 Height="40"
+                                 VerticalContentAlignment="Center"
+                                 HorizontalAlignment="Left"
+                                 Margin="180,-40,0,0"
+                                 Style="{StaticResource ModernForm}"
+                                 Tag="Numer telefonu"
+                                 FontFamily="/Fonts/#Poppins"
+                                 Text="{Binding NumerTelefonu, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+                        <Button x:Name="ConfirmButton"
+                                Width="140"
+                                Height="40"
+                                FontFamily="Poppins"
+                                FontSize="16"
+                                FontWeight="Medium"
+                                Foreground="White"
+                                Margin="0,10,0,0"
+                                Click="ConfirmButton_Click">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border CornerRadius="10"
+                                            Background="#4E3087">
+                                        <ContentPresenter HorizontalAlignment="Center"
+                                                          VerticalAlignment="Center"
+                                                          Content="Potwierdź">
+                                        </ContentPresenter>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
                     </StackPanel>
-
                 </Grid>
             </Border>
-
         </StackPanel>
 
         <Image Source="/Images/flag.png"
@@ -112,7 +215,5 @@
                 <RotateTransform Angle="-15"/>
             </Image.RenderTransform>
         </Image>
-
     </StackPanel>
-
 </UserControl>

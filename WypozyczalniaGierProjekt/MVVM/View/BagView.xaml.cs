@@ -1,28 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Windows.Controls;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using WypozyczalniaGierProjekt.MVVM.ViewModel;
 
 namespace WypozyczalniaGierProjekt.MVVM.View
 {
-    /// <summary>
-    /// Logika interakcji dla klasy BagView.xaml
-    /// </summary>
     public partial class BagView : UserControl
     {
+        private BagViewModel viewModel;
+
         public BagView()
         {
             InitializeComponent();
+            viewModel = new BagViewModel();
+            DataContext = viewModel;
+        }
+
+        private void ConfirmButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Sprawdzanie wypełnienia pól przed potwierdzeniem
+            if (string.IsNullOrWhiteSpace(viewModel.Imie) ||
+                string.IsNullOrWhiteSpace(viewModel.Nazwisko) ||
+                string.IsNullOrWhiteSpace(viewModel.Miejscowosc) ||
+                string.IsNullOrWhiteSpace(viewModel.KodPocztowy) ||
+                string.IsNullOrWhiteSpace(viewModel.Ulica) ||
+                string.IsNullOrWhiteSpace(viewModel.NumerMieszkania) ||
+                string.IsNullOrWhiteSpace(viewModel.Email) ||
+                string.IsNullOrWhiteSpace(viewModel.NumerTelefonu))
+            {
+                MessageBox.Show("Wypełnij wszystkie pola przed potwierdzeniem.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                // Wykonaj operacje po potwierdzeniu
+                // ...
+                MessageBox.Show("Dane zostały potwierdzone.", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
     }
 }
