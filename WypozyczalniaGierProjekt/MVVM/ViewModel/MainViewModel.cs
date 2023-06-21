@@ -9,36 +9,28 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
 {
     class MainViewModel : ObservableObject
     {
-
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand DiscoveryViewCommand { get; set; }
         public RelayCommand BagViewCommand { get; set; }
         public RelayCommand ConfirmViewCommand { get; set; }
 
-
-
         public HomeViewModel HomeVM { get; set; }
-
         public DiscoveryViewModel DiscoveryVM { get; set; }
-
         public BagViewModel BagVM { get; set; }
-
         public ConfirmViewModel ConfirmVM { get; set; }
 
         private object _currentView;
-
         public object CurrentView
         {
             get { return _currentView; }
-            set 
-            { 
+            set
+            {
                 _currentView = value;
                 OnPropertyChanged();
             }
         }
 
-
-        public MainViewModel() 
+        public MainViewModel()
         {
             HomeVM = new HomeViewModel();
             DiscoveryVM = new DiscoveryViewModel();
