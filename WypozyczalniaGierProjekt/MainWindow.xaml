@@ -82,11 +82,12 @@
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding DiscoveryViewCommand}" Checked="RadioButton_Checked"/>
 
-                <RadioButton Content="Odkryj"
+                <RadioButton Content="Koszyk"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding BagViewCommand}"/>
 
             </StackPanel>
 

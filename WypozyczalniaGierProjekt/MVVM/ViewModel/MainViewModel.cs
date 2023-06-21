@@ -12,12 +12,15 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
 
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand DiscoveryViewCommand { get; set; }
+        public RelayCommand BagViewCommand { get; set; }
 
 
 
         public HomeViewModel HomeVM { get; set; }
 
         public DiscoveryViewModel DiscoveryVM { get; set; }
+
+        public BagViewModel BagVM { get; set; }
 
         private object _currentView;
 
@@ -36,6 +39,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
         {
             HomeVM = new HomeViewModel();
             DiscoveryVM = new DiscoveryViewModel();
+            BagVM = new BagViewModel();
 
             CurrentView = HomeVM;
 
@@ -47,6 +51,11 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
             DiscoveryViewCommand = new RelayCommand(o =>
             {
                 CurrentView = DiscoveryVM;
+            });
+
+            BagViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = BagVM;
             });
         }
     }
