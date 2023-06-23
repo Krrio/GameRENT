@@ -33,7 +33,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
             set
             {
                 _username = value;
-                OnProperyChanged(nameof(Username));
+                OnPropertyChanged(nameof(Username));
             }
         }
 
@@ -47,7 +47,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
             set
             {
                 _password = value;
-                OnProperyChanged(nameof(Password));
+                OnPropertyChanged(nameof(Password));
             }
         }
 
@@ -60,7 +60,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
             set
             {
                 _errorMessage = value;
-                OnProperyChanged(nameof(ErrorMessage));
+                OnPropertyChanged(nameof(ErrorMessage));
             }
         } 
         public bool IsViewVisible
@@ -72,7 +72,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
             set
             {
                 _isViewVisible = value;
-                OnProperyChanged(nameof(IsViewVisible));
+                OnPropertyChanged(nameof(IsViewVisible));
             }
         }
 

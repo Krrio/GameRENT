@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:WypozyczalniaGierProjekt"
              xmlns:viewModel="clr-namespace:WypozyczalniaGierProjekt.MVVM.ViewModel"
              xmlns:view="clr-namespace:WypozyczalniaGierProjekt.MVVM.View"
-             StartupUri="MainWindow.xaml">
+             StartupUri="LoginView.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

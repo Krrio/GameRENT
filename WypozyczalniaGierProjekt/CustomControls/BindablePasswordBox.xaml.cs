@@ -27,14 +27,8 @@ namespace WypozyczalniaGierProjekt.CustomControls
 
         public SecureString Password
         {
-            get
-            {
-                return (SecureString)GetValue(PasswordProperty);
-            }
-            set
-            {
-                SetValue(PasswordProperty, value);
-            }
+            get { return (SecureString)GetValue(PasswordProperty); }
+            set { SetValue(PasswordProperty, value); }
         }
         public BindablePasswordBox()
         {
