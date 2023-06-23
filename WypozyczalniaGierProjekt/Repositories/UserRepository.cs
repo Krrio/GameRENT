@@ -27,7 +27,7 @@ namespace WypozyczalniaGierProjekt.Repositories
                 command.Connection = connection;
                 command.CommandText = "select *from [User] where username=@username and [password]=@password";
                 command.Parameters.Add("@username", SqlDbType.NVarChar).Value=credential.UserName;
-                command.Parameters.Add("@username", SqlDbType.NVarChar).Value=credential.Password;
+                command.Parameters.Add("@password", SqlDbType.NVarChar).Value=credential.Password;
                 validUser=command.ExecuteScalar() == null ? false : true;
             }
             return validUser;
@@ -48,7 +48,7 @@ namespace WypozyczalniaGierProjekt.Repositories
             throw new NotImplementedException();
         }
 
-        public UserModel GetByName(string username)
+        public UserModel GetByUsername(string username)
         {
             throw new NotImplementedException();
         }
