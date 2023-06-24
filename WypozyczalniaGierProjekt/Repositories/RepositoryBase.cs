@@ -12,7 +12,7 @@ namespace WypozyczalniaGierProjekt.Repositories
         private readonly string _connectionString;
         public RepositoryBase()
         {
-            _connectionString = "Server=(local); Database=MVVMLoginDb; Integrated Security=true";
+            _connectionString = "Server=(local)\\SQLEXPRESS; Database=MVVMLoginDb; Integrated Security=true";
         }
         protected SqlConnection GetConnection()
         {

@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using WypozyczalniaGierProjekt;
 
 namespace WypozyczalniaGierProjekt
 {
@@ -17,7 +18,7 @@ namespace WypozyczalniaGierProjekt
         {
             var loginView = new LoginView();
             loginView.Show();
-            loginView.IsVisibleChanged+=(s, sv)=>
+            loginView.IsVisibleChanged+=(s, ev)=>
             {
                 if (loginView.IsVisible == false && loginView.IsLoaded)
                 {

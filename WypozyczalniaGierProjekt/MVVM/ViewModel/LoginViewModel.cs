@@ -106,7 +106,8 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
             var isValidUser = userRepository.AuthenticateUser(new NetworkCredential(Username, Password));
             if(isValidUser)
             {
-                Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity(Username), null);
+                Thread.CurrentPrincipal = new GenericPrincipal(
+                    new GenericIdentity(Username), null);
                 IsViewVisible = false;
             }
             else
