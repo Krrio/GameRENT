@@ -5,18 +5,20 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WypozyczalniaGierProjekt.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <StackPanel>
+             d:DesignHeight="850" d:DesignWidth="800">
+    <ScrollViewer> 
 
-        <TextBlock Text="Przeżyj tę samą historię w zupełnie inny sposób"
+        <StackPanel>
+
+            <TextBlock Text="Przeżyj tę samą historię w zupełnie inny sposób"
                    Foreground="white"
                    FontWeight="Medium"
                    FontSize="26"
                    FontFamily="Poppins"
                    HorizontalAlignment="center"
                    Margin="0,10,0,0"/>
-        
-        <TextBlock Text="Daj ponieść się emocjom"
+
+            <TextBlock Text="Daj ponieść się emocjom"
                    Foreground="LightGray"
                    FontWeight="Medium"
                    FontSize="16"
@@ -24,208 +26,418 @@
                    HorizontalAlignment="center"
                    Margin="0,10,0,0"/>
 
-        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal">
 
-            <Grid>
-                <Border Width="150"
+                <Grid>
+                    <Border Width="150"
                         Height="150"
                         Background="#ffabab"
                         CornerRadius="10"
                         Margin="0,20,0,0">
 
-                    <Image Source="/Images/witcher.png"
+                        <Image Source="/Images/witcher.png"
                            Width="200"
                            Height="200"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Margin="30,0,0,0"/>
-                    
-                </Border>
 
-                <TextBlock Text="Wiedźmin 3&#x0a;  Dziki Gon"
+                    </Border>
+
+                    <TextBlock Text="Wiedźmin 3&#x0a;  Dziki Gon"
                        Foreground="White"
                        FontSize="14"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Bottom"
                        Margin="10,0,0,5"
                        FontFamily="/Fonts/#Poppins"/>
-            </Grid>
+                </Grid>
 
-            <Grid>
-                <Border Width="150"
+                <Grid>
+                    <Border Width="150"
                         Height="150"
                         Background="#ffdaab"
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                    <Image Source="/Images/ellie2.png"
+                        <Image Source="/Images/ellie2.png"
                            Width="200"
                            Height="200"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Left"
                            Margin="0,0,0,0"/>
-                </Border>
+                    </Border>
 
-                <TextBlock Text="The Last &#x0a;   Of Us"
+                    <TextBlock Text="The Last &#x0a;   Of Us"
                        Foreground="White"
                        FontSize="14"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Bottom"
                        Margin="30,0,0,5"
                        FontFamily="/Fonts/#Poppins"/>
-            </Grid>
+                </Grid>
 
-            <Grid>
-                <Border Width="150"
+                <Grid>
+                    <Border Width="150"
                         Height="150"
                         Background="#ddffab"
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                    <Image Source="/Images/cbp.png"
+                        <Image Source="/Images/cbp.png"
                            Width="300"
                            Height="300"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Right"
                            Margin="0,0,-30,0"/>
-                </Border>
+                    </Border>
 
-                <TextBlock Text="Cyberpunk&#x0a;     2077"
+                    <TextBlock Text="Cyberpunk&#x0a;     2077"
                        Foreground="White"
                        FontSize="14"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Bottom"
                        Margin="0,0,0,5"
                        FontFamily="/Fonts/#Poppins"/>
-            </Grid>
+                </Grid>
 
-            <Grid>
-                <Border Width="150"
+                <Grid>
+                    <Border Width="150"
                         Height="150"
                         Background="#abe4ff"
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                    <Image Source="/Images/hg.png"
+                        <Image Source="/Images/hg.png"
                            Width="300"
                            Height="300"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Left"
                            Margin="-85,0,0,0"/>
-                </Border>
+                    </Border>
 
-                <TextBlock Text="Hogwarts&#x0a;  Legacy"
+                    <TextBlock Text="Hogwarts&#x0a;  Legacy"
                        Foreground="White"
                        FontSize="14"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Bottom"
                        Margin="0,0,0,5"
                        FontFamily="/Fonts/#Poppins"/>
-            </Grid>
+                </Grid>
 
-        </StackPanel>
+            </StackPanel>
 
-        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal">
 
-            <Grid>
-                <Border Width="150"
+                <Grid>
+                    <Border Width="150"
                         Height="150"
                         Background="#b3cc57"
                         CornerRadius="10"
                         Margin="0,20,0,0">
 
-                    <Image Source="/Images/jedi2.png"
+                        <Image Source="/Images/jedi2.png"
                            Width="150"
                            Height="150"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Margin="0,0,0,0"/>
 
-                </Border>
+                    </Border>
 
-                <TextBlock Text="   Jedi&#x0a;Survior"
+                    <TextBlock Text="   Jedi&#x0a;Survior"
                        Foreground="White"
                        FontSize="14"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Bottom"
                        Margin="10,0,0,5"
                        FontFamily="/Fonts/#Poppins"/>
-            </Grid>
+                </Grid>
 
-            <Grid>
-                <Border Width="150"
+                <Grid>
+                    <Border Width="150"
                         Height="150"
                         Background="#ecf081"
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                    <Image Source="/Images/rdr2.png"
+                        <Image Source="/Images/rdr2.png"
                            Width="180"
                            Height="180"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Left"
                            Margin="0,0,0,0"/>
-                </Border>
+                    </Border>
 
-                <TextBlock Text="     Red Dead&#x0a;Repdemention"
+                    <TextBlock Text="     Red Dead&#x0a;Repdemention"
                        Foreground="White"
                        FontSize="14"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Bottom"
                        Margin="20,0,0,5"
                        FontFamily="/Fonts/#Poppins"/>
-            </Grid>
+                </Grid>
 
-            <Grid>
-                <Border Width="150"
+                <Grid>
+                    <Border Width="150"
                         Height="150"
                         Background="#ab3e5b"
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                    <Image Source="/Images/kratos.png"
+                        <Image Source="/Images/kratos.png"
                            Width="250"
                            Height="250"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Margin="0,20,0,0"/>
-                </Border>
+                    </Border>
 
-                <TextBlock Text="God of War&#x0a;Raganarok"
+                    <TextBlock Text="God of War&#x0a;Raganarok"
                        Foreground="White"
                        FontSize="14"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Bottom"
                        Margin="0,0,0,5"
                        FontFamily="/Fonts/#Poppins"/>
-            </Grid>
+                </Grid>
 
-            <Grid>
-                <Border Width="150"
+                <Grid>
+                    <Border Width="150"
                         Height="150"
                         Background="#ef746f"
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                    <Image Source="/Images/eldenring.png"
+                        <Image Source="/Images/eldenring.png"
                            Width="210"
                            Height="210"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Margin="0,30,10,0"/>
-                </Border>
+                    </Border>
 
-                <TextBlock Text="Elden&#x0a; Ring"
+                    <TextBlock Text="Elden&#x0a; Ring"
                        Foreground="White"
                        FontSize="14"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Bottom"
                        Margin="0,0,0,5"
                        FontFamily="/Fonts/#Poppins"/>
-            </Grid>
+                </Grid>
+
+
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+
+                <Grid>
+                    <Border Width="150"
+                        Height="150"
+                        Background="#3fb8af"
+                        CornerRadius="10"
+                        Margin="0,20,0,0">
+
+                        <Image Source="/Images/cat1.png"
+                           Width="250"
+                           Height="250"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Margin="30,10,0,0"/>
+
+                    </Border>
+
+                    <TextBlock Text="Stray"
+                       Foreground="White"
+                       FontSize="14"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Bottom"
+                       Margin="10,0,0,5"
+                       FontFamily="/Fonts/#Poppins"/>
+                </Grid>
+
+                <Grid>
+                    <Border Width="150"
+                        Height="150"
+                        Background="#7fc7af"
+                        CornerRadius="10"
+                        Margin="10,20,0,0">
+
+                        <Image Source="/Images/subnautica.png"
+                           Width="230"
+                           Height="230"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Margin="0,-20,-70,0"/>
+                    </Border>
+
+                    <TextBlock Text="Subnautica&#x0a;Below Zero"
+                       Foreground="White"
+                       FontSize="14"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Bottom"
+                       Margin="20,0,0,5"
+                       FontFamily="/Fonts/#Poppins"/>
+                </Grid>
+
+                <Grid>
+                    <Border Width="150"
+                        Height="150"
+                        Background="#dad8a7"
+                        CornerRadius="10"
+                        Margin="10,20,0,0">
+
+                        <Image Source="/Images/diablo1.png"
+                           Width="230"
+                           Height="230"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Margin="0,20,0,0"/>
+                    </Border>
+
+                    <TextBlock Text="Diablo&#x0a;    IV"
+                       Foreground="White"
+                       FontSize="14"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Bottom"
+                       Margin="0,0,0,5"
+                       FontFamily="/Fonts/#Poppins"/>
+                </Grid>
+
+                <Grid>
+                    <Border Width="150"
+                        Height="150"
+                        Background="#ff3d7f"
+                        CornerRadius="10"
+                        Margin="10,20,0,0">
+
+                        <Image Source="/Images/spiderman.png"
+                           Width="310"
+                           Height="310"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           Margin="0,10,0,0"/>
+                    </Border>
+
+                    <TextBlock Text="Spider-Man&#x0a;          2"
+                       Foreground="White"
+                       FontSize="14"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Bottom"
+                       Margin="0,0,0,5"
+                       FontFamily="/Fonts/#Poppins"/>
+                </Grid>
+
+
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+
+                <Grid>
+                    <Border Width="150"
+                        Height="150"
+                        Background="#355c7d"
+                        CornerRadius="10"
+                        Margin="0,20,0,0">
+
+                        <Image Source="/Images/fable2.png"
+                           Width="330"
+                           Height="330"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Margin="10,0,0,0"/>
+
+                    </Border>
+
+                    <TextBlock Text="   Fable&#x0a;      IV"
+                       Foreground="White"
+                       FontSize="14"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Bottom"
+                       Margin="10,0,0,5"
+                       FontFamily="/Fonts/#Poppins"/>
+                </Grid>
+
+                <Grid>
+                    <Border Width="150"
+                        Height="150"
+                        Background="#028f76"
+                        CornerRadius="10"
+                        Margin="10,20,0,0">
+
+                        <Image Source="/Images/katana.png"
+                           Width="300"
+                           Height="300"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Margin="20,0,0,0"/>
+                    </Border>
+
+                    <TextBlock Text="Katana&#x0a;   Zero"
+                       Foreground="White"
+                       FontSize="14"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Bottom"
+                       Margin="20,0,0,5"
+                       FontFamily="/Fonts/#Poppins"/>
+                </Grid>
+
+                <Grid>
+                    <Border Width="150"
+                        Height="150"
+                        Background="#69d2e7"
+                        CornerRadius="10"
+                        Margin="10,20,0,0">
+
+                        <Image Source="/Images/knight.png"
+                           Width="300"
+                           Height="300"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Margin="0,-20,0,0"/>
+                    </Border>
+
+                    <TextBlock Text="Hellow&#x0a;Knight"
+                       Foreground="White"
+                       FontSize="14"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Bottom"
+                       Margin="0,0,0,5"
+                       FontFamily="/Fonts/#Poppins"/>
+                </Grid>
+
+                <Grid>
+                    <Border Width="150"
+                        Height="150"
+                        Background="#f07241"
+                        CornerRadius="10"
+                        Margin="10,20,0,0">
+
+                        <Image Source="/Images/shadow.png"
+                           Width="300"
+                           Height="300"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,0"/>
+                    </Border>
+
+                    <TextBlock Text=" Shadow&#x0a;of Mordor"
+                       Foreground="White"
+                       FontSize="14"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Bottom"
+                       Margin="0,0,0,5"
+                       FontFamily="/Fonts/#Poppins"/>
+                </Grid>
+
+
+
+            </StackPanel>
+
 
         </StackPanel>
+    </ScrollViewer>
 
-
-    </StackPanel>
 </UserControl>

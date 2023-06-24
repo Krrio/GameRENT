@@ -320,5 +320,41 @@
   <ItemGroup>
     <Resource Include="Images\eldenring.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\diablo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\diablo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\subnautica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\spiderman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fable1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fable2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\katana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\knight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\shadow.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
