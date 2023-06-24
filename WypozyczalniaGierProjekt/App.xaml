@@ -29,6 +29,10 @@
                 <view:ConfirmView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:CollectionViewModel}">
+                <view:CollectionView/>
+            </DataTemplate>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

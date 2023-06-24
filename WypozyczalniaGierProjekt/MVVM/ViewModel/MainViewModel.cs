@@ -13,11 +13,13 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
         public RelayCommand DiscoveryViewCommand { get; set; }
         public RelayCommand BagViewCommand { get; set; }
         public RelayCommand ConfirmViewCommand { get; set; }
+        public RelayCommand CollectionViewCommand { get; set; }
 
         public HomeViewModel HomeVM { get; set; }
         public DiscoveryViewModel DiscoveryVM { get; set; }
         public BagViewModel BagVM { get; set; }
         public ConfirmViewModel ConfirmVM { get; set; }
+        public CollectionViewModel CollectionVM { get; set; }
 
         private object _currentView;
         public object CurrentView
@@ -36,6 +38,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
             DiscoveryVM = new DiscoveryViewModel();
             BagVM = new BagViewModel();
             ConfirmVM = new ConfirmViewModel();
+            CollectionVM = new CollectionViewModel();
 
             CurrentView = HomeVM;
 
@@ -57,6 +60,11 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
             ConfirmViewCommand = new RelayCommand(o =>
             {
                 CurrentView = ConfirmVM;
+            });
+
+            CollectionViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = CollectionVM;
             });
         }
     }

@@ -56,9 +56,13 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="MVVM\ViewModel\BagViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\CollectionViewModel.cs" />
     <Compile Include="MVVM\ViewModel\ConfirmViewModel.cs" />
     <Compile Include="MVVM\View\BagView.xaml.cs">
       <DependentUpon>BagView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\CollectionView.xaml.cs">
+      <DependentUpon>CollectionView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\ConfirmView.xaml.cs">
       <DependentUpon>ConfirmView.xaml</DependentUpon>
@@ -94,6 +98,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MVVM\View\BagView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\CollectionView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -296,6 +304,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\verified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\jedi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\jedi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\rdr2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\kratos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\eldenring.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

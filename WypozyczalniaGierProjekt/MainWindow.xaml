@@ -81,13 +81,21 @@
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding DiscoveryViewCommand}" Checked="RadioButton_Checked"/>
-
+               
+                <RadioButton Content="Kolekcja"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding CollectionViewCommand}"/>
+                               
                 <RadioButton Content="Koszyk"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding BagViewCommand}"/>
+
 
             </StackPanel>
 
