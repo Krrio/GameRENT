@@ -39,11 +39,15 @@
             <StackPanel Orientation="Horizontal">
 
                 <Grid>
+
                     <Border Width="150"
                         Height="150"
                         Background="#ffabab"
                         CornerRadius="10"
                         Margin="0,20,0,0">
+
+                        <Button Background="Transparent">
+                            
 
                         <Image Source="/Images/witcher.png"
                            Width="200"
@@ -51,6 +55,8 @@
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Margin="30,0,0,0"/>
+                        
+                        </Button>
 
                     </Border>
 
@@ -70,12 +76,16 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Image Source="/Images/ellie2.png"
+                        <Button Background="Transparent">
+
+                            <Image Source="/Images/ellie2.png"
                            Width="200"
                            Height="200"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Left"
                            Margin="0,0,0,0"/>
+
+                        </Button>
                     </Border>
 
                     <TextBlock Text="The Last &#x0a;   Of Us"
@@ -94,12 +104,17 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Image Source="/Images/cbp.png"
+                        <Button Background="Transparent">
+
+                            <Image Source="/Images/cbp.png"
                            Width="300"
                            Height="300"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Right"
                            Margin="0,0,-30,0"/>
+
+                        </Button>
+                    
                     </Border>
 
                     <TextBlock Text="Cyberpunk&#x0a;     2077"
@@ -118,12 +133,17 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Image Source="/Images/hg.png"
+                        <Button Background="Transparent">
+
+                            <Image Source="/Images/hg.png"
                            Width="300"
                            Height="300"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Left"
                            Margin="-85,0,0,0"/>
+
+                        </Button>
+
                     </Border>
 
                     <TextBlock Text="Hogwarts&#x0a;  Legacy"
@@ -146,12 +166,16 @@
                         CornerRadius="10"
                         Margin="0,20,0,0">
 
-                        <Image Source="/Images/jedi2.png"
+                        <Button Background="Transparent">
+
+                            <Image Source="/Images/jedi2.png"
                            Width="150"
                            Height="150"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Margin="0,0,0,0"/>
+
+                        </Button>
 
                     </Border>
 
@@ -171,12 +195,17 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Image Source="/Images/rdr2.png"
+                        <Button Background="Transparent">
+
+                            <Image Source="/Images/rdr2.png"
                            Width="180"
                            Height="180"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Left"
                            Margin="0,0,0,0"/>
+
+                        </Button>
+                    
                     </Border>
 
                     <TextBlock Text="     Red Dead&#x0a;Repdemention"
@@ -195,12 +224,17 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Image Source="/Images/kratos.png"
+                        <Button Background="Transparent">
+
+                            <Image Source="/Images/kratos.png"
                            Width="250"
                            Height="250"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Margin="0,20,0,0"/>
+
+                        </Button>
+                    
                     </Border>
 
                     <TextBlock Text="God of War&#x0a;Raganarok"
@@ -219,12 +253,17 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Image Source="/Images/eldenring.png"
+                        <Button Background="Transparent">
+
+                            <Image Source="/Images/eldenring.png"
                            Width="210"
                            Height="210"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Margin="0,30,10,0"/>
+
+                        </Button>
+
                     </Border>
 
                     <TextBlock Text="Elden&#x0a; Ring"
@@ -249,12 +288,16 @@
                         CornerRadius="10"
                         Margin="0,20,0,0">
 
-                        <Image Source="/Images/cat1.png"
+                        <Button Background="Transparent">
+
+                            <Image Source="/Images/cat1.png"
                            Width="250"
                            Height="250"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Margin="30,10,0,0"/>
+
+                        </Button>
 
                     </Border>
 
@@ -274,12 +317,17 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Image Source="/Images/subnautica.png"
+                        <Button Background="Transparent">
+
+                            <Image Source="/Images/subnautica.png"
                            Width="230"
                            Height="230"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Margin="0,-20,-70,0"/>
+
+                        </Button>
+                    
                     </Border>
 
                     <TextBlock Text="Subnautica&#x0a;Below Zero"
@@ -298,12 +346,17 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Image Source="/Images/diablo1.png"
+                        <Button Background="Transparent">
+
+                            <Image Source="/Images/diablo1.png"
                            Width="230"
                            Height="230"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Margin="0,20,0,0"/>
+
+                        </Button>
+                    
                     </Border>
 
                     <TextBlock Text="Diablo&#x0a;    IV"
@@ -322,12 +375,16 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Image Source="/Images/spiderman.png"
+                        <Button Background="Transparent">
+
+                            <Image Source="/Images/spiderman.png"
                            Width="310"
                            Height="310"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Right"
                            Margin="0,10,0,0"/>
+
+                        </Button>
                     </Border>
 
                     <TextBlock Text="Spider-Man&#x0a;          2"
@@ -352,12 +409,16 @@
                         CornerRadius="10"
                         Margin="0,20,0,0">
 
-                        <Image Source="/Images/fable2.png"
+                        <Button Background="Transparent">
+
+                            <Image Source="/Images/fable2.png"
                            Width="330"
                            Height="330"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Margin="10,0,0,0"/>
+
+                        </Button>
 
                     </Border>
 
@@ -377,12 +438,16 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Image Source="/Images/katana.png"
+                        <Button Background="Transparent">
+
+                            <Image Source="/Images/katana.png"
                            Width="300"
                            Height="300"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Margin="20,0,0,0"/>
+
+                        </Button>
                     </Border>
 
                     <TextBlock Text="Katana&#x0a;   Zero"
@@ -401,12 +466,17 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Image Source="/Images/knight.png"
+                        <Button Background="Transparent">
+
+                            <Image Source="/Images/knight.png"
                            Width="300"
                            Height="300"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Margin="0,-20,0,0"/>
+
+                        </Button>
+                    
                     </Border>
 
                     <TextBlock Text="Hellow&#x0a;Knight"
@@ -425,12 +495,17 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Image Source="/Images/shadow.png"
+                        <Button Background="Transparent">
+
+                            <Image Source="/Images/shadow.png"
                            Width="300"
                            Height="300"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Margin="0,0,0,0"/>
+
+                        </Button>
+                    
                     </Border>
 
                     <TextBlock Text=" Shadow&#x0a;of Mordor"
