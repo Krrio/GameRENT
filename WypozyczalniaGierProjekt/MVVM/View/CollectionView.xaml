@@ -6,11 +6,21 @@
              xmlns:local="clr-namespace:WypozyczalniaGierProjekt.MVVM.View"
              mc:Ignorable="d" 
              d:DesignHeight="850" d:DesignWidth="800">
-    <ScrollViewer> 
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Theme/CustomScrollViewerStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+
+    <ScrollViewer Style="{StaticResource CustomScrollViewerStyle}"> 
 
         <StackPanel>
 
-            <TextBlock Text="Przeżyj tę samą historię w zupełnie inny sposób"
+            <TextBlock Text="Przeżyj tę samą historię, w zupełnie inny sposób"
                    Foreground="white"
                    FontWeight="Medium"
                    FontSize="26"
