@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MVVM\Model\GameModel.cs" />
     <Compile Include="MVVM\ViewModel\BagViewModel.cs" />
     <Compile Include="MVVM\ViewModel\CollectionViewModel.cs" />
     <Compile Include="MVVM\ViewModel\ConfirmViewModel.cs" />
