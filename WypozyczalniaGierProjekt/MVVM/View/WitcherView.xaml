@@ -9,7 +9,7 @@
     <Grid>
         <StackPanel>
 
-            <Border Background="red"
+            <Border Background="#ffabab"
                     Width="550"
                     Height="300"
                     HorizontalAlignment="Center"
@@ -27,7 +27,7 @@
                     CornerRadius="20">
 
 
-                <TextBlock Text="    Witcher XD3&#x0a;TheWild Hunt"
+                <TextBlock Text="    Witcher &#x0a;TheWild Hunt"
                        Foreground="#ffabab"
                        FontSize="35"
                        FontFamily="Poppins"
