@@ -20,9 +20,25 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class CollectionView : UserControl
     {
+
+        public static readonly DependencyProperty CurrentControlProperty =
+        DependencyProperty.Register("CurrentControl", typeof(UserControl), typeof(CollectionView), new PropertyMetadata(null));
+
+        public UserControl CurrentControl
+        {
+            get { return (UserControl)GetValue(CurrentControlProperty); }
+            set { SetValue(CurrentControlProperty, value); }
+        }
         public CollectionView()
         {
             InitializeComponent();
+            CurrentControl = new WitcherView();
+        }
+
+        private void ButtonGoToB_Click(object sender, RoutedEventArgs e)
+        {
+            WitcherView witcherView = new WitcherView();
+            navigationFrame.Content = witcherView;
         }
     }
 }

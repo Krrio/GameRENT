@@ -7,6 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="850" d:DesignWidth="800">
 
+
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -40,13 +41,16 @@
 
                 <Grid>
 
+                    <Frame x:Name="navigationFrame" Grid.Row="1"/>
+
                     <Border Width="150"
                         Height="150"
                         Background="#ffabab"
                         CornerRadius="10"
                         Margin="0,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Click="ButtonGoToB_Click"
+                                Height="200" Background="Transparent">
                             
 
                         <Image Source="/Images/witcher.png"

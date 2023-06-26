@@ -24,5 +24,10 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         {
             InitializeComponent();
         }
+
+        private void ButtonGoToA_Click(object sender, RoutedEventArgs e)
+        {
+            CollectionView collectionView = new CollectionView();
+        }
     }
 }
