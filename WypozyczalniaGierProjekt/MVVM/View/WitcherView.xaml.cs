@@ -27,7 +27,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
 
         private void ButtonGoToA_Click(object sender, RoutedEventArgs e)
         {
-            CollectionView collectionView = new CollectionView();
+            var userControlA = new CollectionView();
+            var parentControl = (CollectionView)this.Parent;
         }
     }
 }

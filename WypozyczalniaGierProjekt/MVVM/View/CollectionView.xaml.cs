@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,24 +22,23 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     public partial class CollectionView : UserControl
     {
 
-        public static readonly DependencyProperty CurrentControlProperty =
-        DependencyProperty.Register("CurrentControl", typeof(UserControl), typeof(CollectionView), new PropertyMetadata(null));
+        public static readonly DependencyProperty ChildControlProperty =
+        DependencyProperty.Register("ChildControl", typeof(UserControl), typeof(CollectionView), new PropertyMetadata(null));
 
-        public UserControl CurrentControl
+        public UserControl ChildControl
         {
-            get { return (UserControl)GetValue(CurrentControlProperty); }
-            set { SetValue(CurrentControlProperty, value); }
+            get { return (UserControl)GetValue(ChildControlProperty);}
+            set { SetValue(ChildControlProperty, value); }
         }
+
         public CollectionView()
         {
             InitializeComponent();
-            CurrentControl = new WitcherView();
         }
 
         private void ButtonGoToB_Click(object sender, RoutedEventArgs e)
         {
-            WitcherView witcherView = new WitcherView();
-            navigationFrame.Content = witcherView;
+            ChildControl = new WitcherView();
         }
     }
 }

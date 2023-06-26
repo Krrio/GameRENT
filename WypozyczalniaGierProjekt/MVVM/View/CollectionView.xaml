@@ -41,16 +41,16 @@
 
                 <Grid>
 
-                    <Frame x:Name="navigationFrame" Grid.Row="1"/>
+                    <local:WitcherView x:Name="ParentControl" Visibility="Collapsed"/>
+                        <ContentControl Content="{Binding ChildControl, RelativeSource={RelativeSource AncestorType={x:Type local:CollectionView}}}"/>
 
-                    <Border Width="150"
+                        <Border Width="150"
                         Height="150"
                         Background="#ffabab"
                         CornerRadius="10"
                         Margin="0,20,0,0">
 
-                        <Button Click="ButtonGoToB_Click"
-                                Height="200" Background="Transparent">
+                        <Button Click="ButtonGoToB_Click">
                             
 
                         <Image Source="/Images/witcher.png"
