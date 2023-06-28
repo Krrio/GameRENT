@@ -11,6 +11,7 @@
                 <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
                 <ResourceDictionary Source="Theme/TextBoxTheme.xaml"/>
                 <ResourceDictionary Source="Theme/FormTheme.xaml"/>
+                <ResourceDictionary Source="Theme/UserTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
@@ -31,6 +32,10 @@
 
             <DataTemplate DataType="{x:Type viewModel:CollectionViewModel}">
                 <view:CollectionView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:UserViewModel}">
+                <view:UserView/>
             </DataTemplate>
 
         </ResourceDictionary>
