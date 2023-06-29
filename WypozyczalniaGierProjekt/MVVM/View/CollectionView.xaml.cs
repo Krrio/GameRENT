@@ -25,5 +25,13 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Witcher userControl2 = new Witcher();
+            MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.Content = userControl2;
+        }
+
     }
 }

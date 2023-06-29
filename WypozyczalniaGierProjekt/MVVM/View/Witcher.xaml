@@ -5,57 +5,101 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WypozyczalniaGierProjekt.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="Transparent">
     <Grid>
         <StackPanel>
 
 
-            <Border Background="#ffabab"
-                    Width="550"
-                    Height="300"
+            <Border Background="#2F4858"
+                    Width="800"
+                    Height="450"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
-                    Margin="0,70,0,0"
+                    Margin="0,0,0,0"
                     CornerRadius="20">
             </Border>
 
             <Border Background="white"
-                    Width="530"
-                    Height="280"
+                    Width="772"
+                    Height="416"
                     HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Margin="0,-300,0,0"
+                    Margin="0,-450,0,0"
                     CornerRadius="20">
 
-
-                <TextBlock Text="    Witcher &#x0a;TheWild Hunt"
-                       Foreground="#ffabab"
-                       FontSize="35"
-                       FontFamily="Poppins"
-                       FontWeight="Medium"
-                       VerticalAlignment="Center"
+                <Image Source="/Images/title1.png"
+                       Width="350"
+                       Height="250"
                        HorizontalAlignment="Left"
-                       Margin="70,-100,0,0"/>
+                       Margin="100,0,0,150"/>
 
             </Border>
 
             <Image Source="/Images/witcher.png"
-                   Width="320"
-                   Height="320"
+                   Width="500"
+                   Height="500"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   Margin="325,-320,0,0"/>
+                   Margin="450,-490,0,0"/>
         </StackPanel>
 
         <StackPanel>
-            <TextBlock Text="Czytaj więcej"
-                       FontSize="20"
-                       Foreground="#ffc4c4"
+            <TextBlock Text="Ilość sztuk dostępnych do wypożyczenia:"
+                       FontSize="15"
+                       Foreground="#2F4858"
                        FontFamily="Poppins"
                        FontWeight="Medium"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
-                       Margin="-160,210,0,0"/>
+                       Margin="-415,300,0,0"/>
         </StackPanel>
+
+        <StackPanel>
+            <TextBlock Text="Ilość sztuk dostępnych do kupienia:"
+                       FontSize="15"
+                       Foreground="#2F4858"
+                       FontFamily="Poppins"
+                       FontWeight="Medium"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Margin="-450,270,0,0"/>
+        </StackPanel>
+
+        <StackPanel>
+            <Button Background="Transparent"
+                    Width="80"
+                    Height="70"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Left"
+                    Margin="90,336,0,0"
+                    BorderThickness="0">
+                <Image Source="/Images/rent2.png"
+                       Width="70"
+                       Height="70"
+                       VerticalAlignment="Bottom"
+                       HorizontalAlignment="Left"
+                       Margin="0,0,0,0"/>
+            </Button>
+
+        </StackPanel>
+
+        <StackPanel>
+            <Button Background="Transparent"
+                    Width="80"
+                    Height="80"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Left"
+                    Margin="210,350,0,0"
+                    BorderThickness="0">
+                <Image Source="/Images/buy.png"
+                       Width="70"
+                       Height="70"
+                       VerticalAlignment="Bottom"
+                       HorizontalAlignment="Left"
+                       Margin="0,0,0,0"/>
+            </Button>
+
+        </StackPanel>
+
     </Grid>
 </UserControl>
