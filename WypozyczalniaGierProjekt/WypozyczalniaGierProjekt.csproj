@@ -72,8 +72,8 @@
     <Compile Include="MVVM\View\UserView.xaml.cs">
       <DependentUpon>UserView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MVVM\View\WitcherView.xaml.cs">
-      <DependentUpon>WitcherView.xaml</DependentUpon>
+    <Compile Include="MVVM\View\Witcher.xaml.cs">
+      <DependentUpon>Witcher.xaml</DependentUpon>
     </Compile>
     <Compile Include="Repositories\RepositoryBase.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
@@ -129,7 +129,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MVVM\View\WitcherView.xaml">
+    <Page Include="MVVM\View\Witcher.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

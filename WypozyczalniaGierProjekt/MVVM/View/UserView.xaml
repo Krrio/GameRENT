@@ -5,8 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WypozyczalniaGierProjekt.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800"
-             Background="Transparent">
+             d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Border Background="#483078"
                 CornerRadius="20"/>
@@ -20,16 +19,136 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        Margin="0,20,0,0"/>
-            
+
             <Border Width="200"
                     Height="40"
                     Background="#301860"
                     CornerRadius="20"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Left"
-                    Margin="60,40,0,0">
+                    Margin="120,100,0,0">
 
                 <TextBlock Text="Imię"
+                           Foreground="#d9abff"
+                           FontSize="12"
+                           FontWeight="Medium"
+                           FontFamily="Poppins"
+                           VerticalAlignment="Center"
+                           Margin="15,-60,0,0"/>
+            </Border>
+
+            <Border Width="200"
+                    Height="40"
+                    Background="#301860"
+                    CornerRadius="20"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"
+                    Margin="120,20,0,0">
+
+                <TextBlock Text="Nazwisko"
+                           Foreground="#d9abff"
+                           FontSize="12"
+                           FontWeight="Medium"
+                           FontFamily="Poppins"
+                           VerticalAlignment="Center"
+                           Margin="15,-60,0,0"/>
+            </Border>
+
+            <Border Width="200"
+                    Height="40"
+                    Background="#301860"
+                    CornerRadius="20"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"
+                    Margin="120,20,0,0">
+
+                <TextBlock Text="Numer telefonu"
+                           Foreground="#d9abff"
+                           FontSize="12"
+                           FontWeight="Medium"
+                           FontFamily="Poppins"
+                           VerticalAlignment="Center"
+                           Margin="15,-60,0,0"/>
+            </Border>
+
+            <Border Width="200"
+                    Height="40"
+                    Background="#301860"
+                    CornerRadius="20"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"
+                    Margin="120,20,0,0">
+
+                <TextBlock Text="Adres"
+                           Foreground="#d9abff"
+                           FontSize="12"
+                           FontWeight="Medium"
+                           FontFamily="Poppins"
+                           VerticalAlignment="Center"
+                           Margin="15,-60,0,0"/>
+            </Border>
+
+            <Border Width="200"
+                    Height="40"
+                    Background="#301860"
+                    CornerRadius="20"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Margin="0,-340,120,0">
+
+                <TextBlock Text="Ilość wypożyczonych gier"
+                           Foreground="#d9abff"
+                           FontSize="12"
+                           FontWeight="Medium"
+                           FontFamily="Poppins"
+                           VerticalAlignment="Center"
+                           Margin="15,-63,0,0"/>
+            </Border>
+
+
+            <Border Width="200"
+                    Height="40"
+                    Background="#301860"
+                    CornerRadius="20"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Margin="0,-210,120,0">
+
+                <TextBlock Text="Ilość kupionych gier"
+                           Foreground="#d9abff"
+                           FontSize="12"
+                           FontWeight="Medium"
+                           FontFamily="Poppins"
+                           VerticalAlignment="Center"
+                           Margin="15,-63,0,0"/>
+            </Border>
+
+            <Border Width="200"
+                    Height="40"
+                    Background="#301860"
+                    CornerRadius="20"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Margin="0,-80,120,0">
+
+                <TextBlock Text="Twoje Punkty"
+                           Foreground="#d9abff"
+                           FontSize="12"
+                           FontWeight="Medium"
+                           FontFamily="Poppins"
+                           VerticalAlignment="Center"
+                           Margin="15,-63,0,0"/>
+            </Border>
+
+            <Border Width="200"
+                    Height="40"
+                    Background="#301860"
+                    CornerRadius="20"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Center"
+                    Margin="0,-310,0,0">
+
+                <TextBlock Text="ID"
                            Foreground="#d9abff"
                            FontSize="18"
                            FontWeight="Medium"
@@ -38,124 +157,6 @@
                            Margin="15,0,0,0"/>
             </Border>
 
-            <Border Width="200"
-                    Height="40"
-                    Background="#301860"
-                    CornerRadius="20"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Left"
-                    Margin="60,15,0,0">
-
-                <TextBlock Text="Imię"
-                           Foreground="#d9abff"
-                           FontSize="18"
-                           FontWeight="Medium"
-                           FontFamily="Poppins"
-                           VerticalAlignment="Center"
-                           Margin="15,0,0,0"/>
-            </Border>
-
-            <Border Width="200"
-                    Height="40"
-                    Background="#301860"
-                    CornerRadius="20"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Left"
-                    Margin="60,15,0,0">
-
-                <TextBlock Text="Imię"
-                           Foreground="#d9abff"
-                           FontSize="18"
-                           FontWeight="Medium"
-                           FontFamily="Poppins"
-                           VerticalAlignment="Center"
-                           Margin="15,0,0,0"/>
-            </Border>
-
-            <Border Width="200"
-                    Height="40"
-                    Background="#301860"
-                    CornerRadius="20"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Left"
-                    Margin="60,15,0,0">
-
-                <TextBlock Text="Imię"
-                           Foreground="#d9abff"
-                           FontSize="18"
-                           FontWeight="Medium"
-                           FontFamily="Poppins"
-                           VerticalAlignment="Center"
-                           Margin="15,0,0,0"/>
-            </Border>
-
-            <Border Width="200"
-                    Height="40"
-                    Background="#301860"
-                    CornerRadius="20"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Left"
-                    Margin="60,15,0,0">
-
-                <TextBlock Text="Imię"
-                           Foreground="#d9abff"
-                           FontSize="18"
-                           FontWeight="Medium"
-                           FontFamily="Poppins"
-                           VerticalAlignment="Center"
-                           Margin="15,0,0,0"/>
-            </Border>
-
-            <Border Width="200"
-                    Height="40"
-                    Background="#301860"
-                    CornerRadius="20"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Left"
-                    Margin="60,15,0,0">
-
-                <TextBlock Text="Imię"
-                           Foreground="#d9abff"
-                           FontSize="18"
-                           FontWeight="Medium"
-                           FontFamily="Poppins"
-                           VerticalAlignment="Center"
-                           Margin="15,0,0,0"/>
-            </Border>
-
-            <Border Width="200"
-                    Height="40"
-                    Background="#301860"
-                    CornerRadius="20"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Left"
-                    Margin="60,15,0,0">
-
-                <TextBlock Text="Imię"
-                           Foreground="#d9abff"
-                           FontSize="18"
-                           FontWeight="Medium"
-                           FontFamily="Poppins"
-                           VerticalAlignment="Center"
-                           Margin="15,0,0,0"/>
-            </Border>
-
-            <Border Width="200"
-                    Height="40"
-                    Background="#301860"
-                    CornerRadius="20"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Left"
-                    Margin="60,15,0,0">
-
-                <TextBlock Text="Imię"
-                           Foreground="#d9abff"
-                           FontSize="18"
-                           FontWeight="Medium"
-                           FontFamily="Poppins"
-                           VerticalAlignment="Center"
-                           Margin="0,0,0,0"/>
-            </Border>
         </StackPanel>
     </Grid>
 </UserControl>

@@ -73,7 +73,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
             UserViewCommand = new RelayCommand(o =>
             {
                 CurrentView = UserVM;
-            });
+            });           
         }
     }
 }

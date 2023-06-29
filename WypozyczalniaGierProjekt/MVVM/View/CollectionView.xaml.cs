@@ -21,24 +21,9 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class CollectionView : UserControl
     {
-
-        public static readonly DependencyProperty ChildControlProperty =
-        DependencyProperty.Register("ChildControl", typeof(UserControl), typeof(CollectionView), new PropertyMetadata(null));
-
-        public UserControl ChildControl
-        {
-            get { return (UserControl)GetValue(ChildControlProperty);}
-            set { SetValue(ChildControlProperty, value); }
-        }
-
         public CollectionView()
         {
             InitializeComponent();
-        }
-
-        private void ButtonGoToB_Click(object sender, RoutedEventArgs e)
-        {
-            ChildControl = new WitcherView();
         }
     }
 }

@@ -16,19 +16,13 @@ using System.Windows.Shapes;
 namespace WypozyczalniaGierProjekt.MVVM.View
 {
     /// <summary>
-    /// Logika interakcji dla klasy WitcherView.xaml
+    /// Logika interakcji dla klasy Witcher.xaml
     /// </summary>
-    public partial class WitcherView : UserControl
+    public partial class Witcher : UserControl
     {
-        public WitcherView()
+        public Witcher()
         {
             InitializeComponent();
-        }
-
-        private void ButtonGoToA_Click(object sender, RoutedEventArgs e)
-        {
-            var userControlA = new CollectionView();
-            var parentControl = (CollectionView)this.Parent;
         }
     }
 }
