@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 
 namespace WypozyczalniaGierProjekt.MVVM.View
 {
-    /// <summary>
-    /// Logika interakcji dla klasy Witcher.xaml
-    /// </summary>
     public partial class Witcher : UserControl
     {
+
+        public event Action ShowMainWindowRequested;
+
         public Witcher()
         {
             InitializeComponent();

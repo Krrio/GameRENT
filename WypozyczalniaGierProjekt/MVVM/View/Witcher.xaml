@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:WypozyczalniaGierProjekt.MVVM.View"
+             xmlns:local="clr-namespace:WypozyczalniaGierProjekt.MVVM.View" 
+             xmlns:view="clr-namespace:WypozyczalniaGierProjekt.MVVM.View"
+             xmlns:viewmodel="clr-namespace:WypozyczalniaGierProjekt.MVVM.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              Background="Transparent">
@@ -113,7 +115,7 @@
                     BorderThickness="0">
                 <Image Source="/Images/back.png"
                        Width="30"
-                       Height="30"
+                        Height="30"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Left"
                        Margin="10,0,0,0"/>

@@ -522,9 +522,11 @@
 
 
             </StackPanel>
-
-
+            
+            <ContentControl x:Name="contentContainer" />
+            
         </StackPanel>
+
     </ScrollViewer>
 
 </UserControl>

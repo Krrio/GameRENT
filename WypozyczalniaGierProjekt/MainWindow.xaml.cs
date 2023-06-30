@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static WypozyczalniaGierProjekt.MainWindow;
 
 namespace WypozyczalniaGierProjekt
 {
@@ -24,6 +25,7 @@ namespace WypozyczalniaGierProjekt
         {
             InitializeComponent();
         }
+
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
@@ -58,5 +60,6 @@ namespace WypozyczalniaGierProjekt
         {
             DragMove();
         }
+
     }
 }
