@@ -78,7 +78,8 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Background="Transparent"
+                                Click="Button_Click1">
 
                             <Image Source="/Images/ellie2.png"
                            Width="200"

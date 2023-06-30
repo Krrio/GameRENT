@@ -69,6 +69,9 @@
     <Compile Include="MVVM\View\ConfirmView.xaml.cs">
       <DependentUpon>ConfirmView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MVVM\View\TheLastOfUs.xaml.cs">
+      <DependentUpon>TheLastOfUs.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\UserView.xaml.cs">
       <DependentUpon>UserView.xaml</DependentUpon>
     </Compile>
@@ -122,6 +125,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\HomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\TheLastOfUs.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -401,6 +408,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\the1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\title2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
