@@ -262,7 +262,7 @@
                            Height="210"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
-                           Margin="0,30,10,0"/>
+                           Margin="0,30,0,0"/>
 
                         </Button>
 

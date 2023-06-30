@@ -94,7 +94,8 @@
                     VerticalAlignment="Bottom"
                     HorizontalAlignment="Left"
                     Margin="90,365,0,0"
-                    BorderThickness="0">
+                    BorderThickness="0"
+                    Click="Button_Click">
                 <Image Source="/Images/back.png"
                        Width="30"
                         Height="30"
