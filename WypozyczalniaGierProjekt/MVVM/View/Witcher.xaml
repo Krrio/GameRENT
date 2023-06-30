@@ -70,39 +70,21 @@
         </StackPanel>
 
         <StackPanel>
-            <Button Background="Transparent"
-                    Width="80"
-                    Height="70"
+
+            <Border Background="#2F4858"
+                    Width="150"
+                    Height="50"
+                    CornerRadius="20"
                     VerticalAlignment="Bottom"
-                    HorizontalAlignment="Left"
-                    Margin="160,336,0,0"
-                    BorderThickness="0">
-                <Image Source="/Images/rent2.png"
-                       Width="70"
-                       Height="70"
-                       VerticalAlignment="Bottom"
-                       HorizontalAlignment="Left"
-                       Margin="0,0,0,0"/>
-            </Button>
-
-        </StackPanel>
-
-        <StackPanel>
-            <Button Background="Transparent"
-                    Width="80"
-                    Height="80"
-                    VerticalAlignment="Bottom"
-                    HorizontalAlignment="Left"
-                    Margin="260,350,0,0"
-                    BorderThickness="0">
-                <Image Source="/Images/buy.png"
-                       Width="70"
-                       Height="70"
-                       VerticalAlignment="Bottom"
-                       HorizontalAlignment="Left"
-                       Margin="0,0,0,0"/>
-            </Button>
-
+                    Margin="0,360,0,0">
+                <Button Background="Transparent"
+                        BorderThickness="0"
+                        Content="Dodaj do koszyka"
+                        Foreground="white"
+                        FontFamily="Poppins"
+                        FontSize="16"
+                        Style="{StaticResource ButtonStyle}"/>
+            </Border>
         </StackPanel>
 
         <StackPanel>
