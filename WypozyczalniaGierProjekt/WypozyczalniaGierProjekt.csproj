@@ -69,6 +69,12 @@
     <Compile Include="MVVM\View\ConfirmView.xaml.cs">
       <DependentUpon>ConfirmView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MVVM\View\Cyberpunk.xaml.cs">
+      <DependentUpon>Cyberpunk.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\Hogwarts.xaml.cs">
+      <DependentUpon>Hogwarts.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\TheLastOfUs.xaml.cs">
       <DependentUpon>TheLastOfUs.xaml</DependentUpon>
     </Compile>
@@ -120,7 +126,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVVM\View\Cyberpunk.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\DiscoveryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\Hogwarts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -414,6 +428,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\title2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\title3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\title4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

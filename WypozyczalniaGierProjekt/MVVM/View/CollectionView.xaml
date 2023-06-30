@@ -107,7 +107,8 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Background="Transparent"
+                                Click="Button_Click2">
 
                             <Image Source="/Images/cbp.png"
                            Width="300"
@@ -136,7 +137,8 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Background="Transparent"
+                                Click="Button_Click3">
 
                             <Image Source="/Images/hg.png"
                            Width="300"

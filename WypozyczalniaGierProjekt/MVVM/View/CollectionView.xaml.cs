@@ -40,5 +40,19 @@ namespace WypozyczalniaGierProjekt.MVVM.View
             mainWindow.Content = userControl2;
         }
 
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            Cyberpunk userControl2 = new Cyberpunk();
+            MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.Content = userControl2;
+        }
+
+        private void Button_Click3(object sender, RoutedEventArgs e)
+        {
+            Hogwarts userControl2 = new Hogwarts();
+            MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.Content = userControl2;
+        }
+
     }
 }
