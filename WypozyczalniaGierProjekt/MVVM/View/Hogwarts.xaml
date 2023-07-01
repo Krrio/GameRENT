@@ -14,7 +14,7 @@
         <StackPanel>
 
 
-            <Border Background="#f5dd9d"
+            <Border Background="#b3e099"
                     Width="800"
                     Height="450"
                     HorizontalAlignment="Center"
@@ -71,7 +71,7 @@
 
         <StackPanel>
 
-            <Border Background="#2F4858"
+            <Border Background="#b3e099"
                     Width="150"
                     Height="50"
                     CornerRadius="20"

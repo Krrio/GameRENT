@@ -54,5 +54,89 @@ namespace WypozyczalniaGierProjekt.MVVM.View
             mainWindow.Content = userControl2;
         }
 
+        private void Button_Click4(object sender, RoutedEventArgs e)
+        {
+            Jedi userControl2 = new Jedi();
+            MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.Content = userControl2;
+        }
+
+        private void Button_Click5(object sender, RoutedEventArgs e)
+        {
+            rdr2 userControl2 = new rdr2();
+            MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.Content = userControl2;
+        }
+
+        private void Button_Click6(object sender, RoutedEventArgs e)
+        {
+            gow userControl2 = new gow();
+            MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.Content = userControl2;
+        }
+
+        private void Button_Click7(object sender, RoutedEventArgs e)
+        {
+            EldenRing userControl2 = new EldenRing();
+            MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.Content = userControl2;
+        }
+
+        private void Button_Click8(object sender, RoutedEventArgs e)
+        {
+            Stray userControl2 = new Stray();
+            MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.Content = userControl2;
+        }
+
+        private void Button_Click9(object sender, RoutedEventArgs e)
+        {
+            Subnautica userControl2 = new Subnautica();
+            MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.Content = userControl2;
+        }
+
+        private void Button_Click10(object sender, RoutedEventArgs e)
+        {
+            Diablo userControl2 = new Diablo();
+            MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.Content = userControl2;
+        }
+
+        private void Button_Click11(object sender, RoutedEventArgs e)
+        {
+            Spiderman userControl2 = new Spiderman();
+            MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.Content = userControl2;
+        }
+
+        private void Button_Click12(object sender, RoutedEventArgs e)
+        {
+            Fable userControl2 = new Fable();
+            MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.Content = userControl2;
+        }
+
+        private void Button_Click13(object sender, RoutedEventArgs e)
+        {
+            KatanaZero userControl2 = new KatanaZero();
+            MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.Content = userControl2;
+        }
+
+        private void Button_Click14(object sender, RoutedEventArgs e)
+        {
+            Knight userControl2 = new Knight();
+            MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.Content = userControl2;
+        }
+
+        private void Button_Click15(object sender, RoutedEventArgs e)
+        {
+            som userControl2 = new som();
+            MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.Content = userControl2;
+        }
+
     }
 }

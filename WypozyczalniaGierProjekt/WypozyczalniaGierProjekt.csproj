@@ -72,8 +72,44 @@
     <Compile Include="MVVM\View\Cyberpunk.xaml.cs">
       <DependentUpon>Cyberpunk.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MVVM\View\Diablo.xaml.cs">
+      <DependentUpon>Diablo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\EldenRing.xaml.cs">
+      <DependentUpon>EldenRing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\Fable.xaml.cs">
+      <DependentUpon>Fable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\gow.xaml.cs">
+      <DependentUpon>gow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\Hogwarts.xaml.cs">
       <DependentUpon>Hogwarts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\Jedi.xaml.cs">
+      <DependentUpon>Jedi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\KatanaZero.xaml.cs">
+      <DependentUpon>KatanaZero.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\Knight.xaml.cs">
+      <DependentUpon>Knight.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\rdr2.xaml.cs">
+      <DependentUpon>rdr2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\som.xaml.cs">
+      <DependentUpon>som.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\Spiderman.xaml.cs">
+      <DependentUpon>Spiderman.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\Stray.xaml.cs">
+      <DependentUpon>Stray.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\Subnautica.xaml.cs">
+      <DependentUpon>Subnautica.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\TheLastOfUs.xaml.cs">
       <DependentUpon>TheLastOfUs.xaml</DependentUpon>
@@ -130,7 +166,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVVM\View\Diablo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\DiscoveryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\EldenRing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\Fable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\gow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -139,6 +191,38 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\HomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\Jedi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\KatanaZero.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\Knight.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\rdr2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\som.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\Spiderman.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\Stray.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\Subnautica.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -434,6 +518,42 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\title4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\title5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\title6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\title7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\title8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\title9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\title10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\title11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\title12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\title13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\title14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\title15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\title16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

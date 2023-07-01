@@ -171,7 +171,8 @@
                         CornerRadius="10"
                         Margin="0,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Background="Transparent"
+                                Click="Button_Click4">
 
                             <Image Source="/Images/jedi2.png"
                            Width="150"
@@ -200,7 +201,8 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Background="Transparent"
+                                Click="Button_Click5">
 
                             <Image Source="/Images/rdr2.png"
                            Width="180"
@@ -229,7 +231,8 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Background="Transparent"
+                                Click="Button_Click6">
 
                             <Image Source="/Images/kratos.png"
                            Width="250"
@@ -258,7 +261,8 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Background="Transparent"
+                                Click="Button_Click7">
 
                             <Image Source="/Images/eldenring.png"
                            Width="210"
@@ -293,7 +297,8 @@
                         CornerRadius="10"
                         Margin="0,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Background="Transparent"
+                                Click="Button_Click8">
 
                             <Image Source="/Images/cat1.png"
                            Width="250"
@@ -322,7 +327,8 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Background="Transparent"
+                                Click="Button_Click9">
 
                             <Image Source="/Images/subnautica.png"
                            Width="230"
@@ -351,7 +357,8 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Background="Transparent"
+                                Click="Button_Click10">
 
                             <Image Source="/Images/diablo1.png"
                            Width="230"
@@ -380,7 +387,8 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Background="Transparent"
+                                Click="Button_Click11">
 
                             <Image Source="/Images/spiderman.png"
                            Width="310"
@@ -414,7 +422,8 @@
                         CornerRadius="10"
                         Margin="0,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Background="Transparent"
+                                Click="Button_Click12">
 
                             <Image Source="/Images/fable2.png"
                            Width="330"
@@ -443,7 +452,8 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Background="Transparent"
+                                Click="Button_Click13">
 
                             <Image Source="/Images/katana.png"
                            Width="300"
@@ -471,7 +481,8 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Background="Transparent"
+                                Click="Button_Click14">
 
                             <Image Source="/Images/knight.png"
                            Width="300"
@@ -500,7 +511,8 @@
                         CornerRadius="10"
                         Margin="10,20,0,0">
 
-                        <Button Background="Transparent">
+                        <Button Background="Transparent"
+                                Click="Button_Click15">
 
                             <Image Source="/Images/shadow.png"
                            Width="300"
@@ -510,7 +522,7 @@
                            Margin="0,0,0,0"/>
 
                         </Button>
-                    
+
                     </Border>
 
                     <TextBlock Text=" Shadow&#x0a;of Mordor"

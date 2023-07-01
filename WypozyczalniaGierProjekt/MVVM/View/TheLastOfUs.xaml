@@ -71,7 +71,7 @@
 
         <StackPanel>
 
-            <Border Background="#2F4858"
+            <Border Background="#4f364a"
                     Width="150"
                     Height="50"
                     CornerRadius="20"
