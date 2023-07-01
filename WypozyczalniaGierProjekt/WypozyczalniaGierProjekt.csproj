@@ -121,6 +121,7 @@
       <DependentUpon>Witcher.xaml</DependentUpon>
     </Compile>
     <Compile Include="Repositories\RepositoryBase.cs" />
+    <Compile Include="Repositories\ShopBagBase.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Page Include="CustomControls\BindablePasswordBox.xaml">
       <SubType>Designer</SubType>

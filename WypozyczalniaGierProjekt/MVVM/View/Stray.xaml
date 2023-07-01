@@ -83,7 +83,9 @@
                         Foreground="white"
                         FontFamily="Poppins"
                         FontSize="16"
-                        Style="{StaticResource ButtonStyle}"/>
+                        Style="{StaticResource ButtonStyle}"
+                        x:Name="addToCartButton"
+                        Click="AddToCartButton_Click"/>
             </Border>
         </StackPanel>
 
