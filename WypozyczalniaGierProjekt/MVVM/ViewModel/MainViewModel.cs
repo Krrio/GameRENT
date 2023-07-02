@@ -93,5 +93,5 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
                 CurrentView = UserVM1;
             });
         }
-    }
+    };
 }
