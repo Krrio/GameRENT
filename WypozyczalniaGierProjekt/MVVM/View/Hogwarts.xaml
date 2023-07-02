@@ -48,25 +48,15 @@
         </StackPanel>
 
         <StackPanel>
-            <TextBlock Text="Ilość sztuk dostępnych do wypożyczenia:"
+            <TextBlock Text="Ilość sztuk dostępnych do kupienia: 65"
                        FontSize="15"
                        Foreground="#2F4858"
                        FontFamily="Poppins"
                        FontWeight="Medium"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
-                       Margin="-360,300,0,0"/>
-        </StackPanel>
-
-        <StackPanel>
-            <TextBlock Text="Ilość sztuk dostępnych do kupienia:"
-                       FontSize="15"
-                       Foreground="#2F4858"
-                       FontFamily="Poppins"
-                       FontWeight="Medium"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       Margin="-400,270,0,0"/>
+                       Margin="-400,270,0,0"
+                       x:Name="AvailableQuantityTextBlock"/>
         </StackPanel>
 
         <StackPanel>

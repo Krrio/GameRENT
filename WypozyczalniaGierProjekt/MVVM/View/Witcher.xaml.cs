@@ -21,6 +21,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
 
         public event Action ShowMainWindowRequested;
 
+        private int availableQuantity = 63;
+
         public Witcher()
         {
             InitializeComponent();
@@ -34,6 +36,19 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+
+            int quantity = 1;
+
+            if (availableQuantity > 0)
+            {
+                availableQuantity -= quantity;
+                AvailableQuantityTextBlock.Text = "Ilość sztuk dostępnych do kupienia: " + availableQuantity.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Brak dostępnego produktu");
+            }
+
             // Pobierz dane gry, które chcesz dodać do bazy danych
             string tytul = "Witcher 3";
             decimal cena = 349.99m;

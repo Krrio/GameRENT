@@ -21,6 +21,7 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class Fable : UserControl
     {
+        private int availableQuantity = 84;
         public Fable()
         {
             InitializeComponent();
@@ -33,6 +34,20 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+
+            int quantity = 1;
+
+            if (availableQuantity > 0)
+            {
+                availableQuantity -= quantity;
+                AvailableQuantityTextBlock.Text = "Ilość sztuk dostępnych do kupienia: " + availableQuantity.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Brak dostępnego produktu");
+            }
+
+
             // Pobierz dane gry, które chcesz dodać do bazy danych
             string tytul = "Fable IV"; 
             decimal cena = 249.99m; 

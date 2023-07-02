@@ -21,6 +21,7 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class EldenRing : UserControl
     {
+        private int availableQuantity = 55;
         public EldenRing()
         {
             InitializeComponent();
@@ -33,6 +34,19 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+            int quantity = 1;
+
+            if (availableQuantity > 0)
+            {
+                availableQuantity -= quantity;
+                AvailableQuantityTextBlock.Text = "Ilość sztuk dostępnych do kupienia: " + availableQuantity.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Brak dostępnego produktu");
+            }
+
+
             // Pobierz dane gry, które chcesz dodać do bazy danych
             string tytul = "Elden Ring";
             decimal cena = 199.99m;

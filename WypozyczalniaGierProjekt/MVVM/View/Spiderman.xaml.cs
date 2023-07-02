@@ -21,6 +21,7 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class Spiderman : UserControl
     {
+        private int availableQuantity = 89;
         public Spiderman()
         {
             InitializeComponent();
@@ -33,6 +34,19 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+            int quantity = 1;
+
+            if (availableQuantity > 0)
+            {
+                availableQuantity -= quantity;
+                AvailableQuantityTextBlock.Text = "Ilość sztuk dostępnych do kupienia: " + availableQuantity.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Brak dostępnego produktu");
+            }
+
+
             // Pobierz dane gry, które chcesz dodać do bazy danych
             string tytul = "Spider-Man";
             decimal cena = 269.99m;

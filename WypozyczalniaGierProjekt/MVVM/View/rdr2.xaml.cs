@@ -21,6 +21,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class rdr2 : UserControl
     {
+        private int availableQuantity = 129;
+
         public rdr2()
         {
             InitializeComponent();
@@ -33,6 +35,19 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+
+            int quantity = 1;
+
+            if (availableQuantity > 0)
+            {
+                availableQuantity -= quantity;
+                AvailableQuantityTextBlock.Text = "Ilość sztuk dostępnych do kupienia: " + availableQuantity.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Brak dostępnego produktu");
+            }
+
             // Pobierz dane gry, które chcesz dodać do bazy danych
             string tytul = "Red Dead Redemention";
             decimal cena = 199.99m;

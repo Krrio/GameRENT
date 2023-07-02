@@ -21,6 +21,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class KatanaZero : UserControl
     {
+        private int availableQuantity = 17;
+
         public KatanaZero()
         {
             InitializeComponent();
@@ -33,6 +35,19 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+            int quantity = 1;
+
+            if (availableQuantity > 0)
+            {
+                availableQuantity -= quantity;
+                AvailableQuantityTextBlock.Text = "Ilość sztuk dostępnych do kupienia: " + availableQuantity.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Brak dostępnego produktu");
+            }
+
+
             // Pobierz dane gry, które chcesz dodać do bazy danych
             string tytul = "Katana Zero";
             decimal cena = 79.99m;

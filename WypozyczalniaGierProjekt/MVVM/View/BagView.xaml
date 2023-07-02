@@ -329,5 +329,20 @@
             </Image.RenderTransform>
         </Image>
 
+        <Border Width="200"
+                Height="200"
+                Margin="250,-1230,0,0"
+                Background="#4E3087"
+                CornerRadius="20">
+            <TextBlock Text="Wartość koszyka: "
+                       Foreground="#8473F5"
+                       FontSize="15"
+                       FontWeight="Medium"
+                       FontFamily="Poppins"
+                       TextAlignment="Left"
+                       Margin="10,10,0,0"/>
+
+        </Border>
+
     </StackPanel>
 </UserControl>

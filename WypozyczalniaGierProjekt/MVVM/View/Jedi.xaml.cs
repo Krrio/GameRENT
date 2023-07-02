@@ -21,6 +21,7 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class Jedi : UserControl
     {
+        private int availableQuantity = 172;
         public Jedi()
         {
             InitializeComponent();
@@ -34,6 +35,18 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+            int quantity = 1;
+
+            if (availableQuantity > 0)
+            {
+                availableQuantity -= quantity;
+                AvailableQuantityTextBlock.Text = "Ilość sztuk dostępnych do kupienia: " + availableQuantity.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Brak dostępnego produktu");
+            }
+
             // Pobierz dane gry, które chcesz dodać do bazy danych
             string tytul = "Jedi Survior";
             decimal cena = 299.99m;
