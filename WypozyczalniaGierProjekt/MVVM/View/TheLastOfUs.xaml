@@ -55,7 +55,7 @@
                        FontWeight="Medium"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
-                       Margin="-70,300,0,0"/>
+                       Margin="-70,230,0,0"/>
         </StackPanel>
 
         <StackPanel>
@@ -66,7 +66,7 @@
                        FontWeight="Medium"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
-                       Margin="-105,270,0,0"/>
+                       Margin="-105,200,0,0"/>
         </StackPanel>
 
         <StackPanel>
@@ -86,6 +86,24 @@
                         Style="{StaticResource ButtonStyle}"
                         x:Name="addToCartButton"
                         Click="AddToCartButton_Click"/>
+            </Border>
+        </StackPanel>
+
+        <StackPanel>
+
+            <Border Background="#4f364a"
+                    Width="70"
+                    Height="50"
+                    CornerRadius="20"
+                    VerticalAlignment="Bottom"
+                    Margin="80,300,0,0">
+                <Button Background="Transparent"
+                        BorderThickness="0"
+                        Content="299.99"
+                        Foreground="white"
+                        FontFamily="Poppins"
+                        FontSize="16"
+                        Style="{StaticResource ButtonStyle}"/>
             </Border>
         </StackPanel>
 

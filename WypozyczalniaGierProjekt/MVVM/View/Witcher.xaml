@@ -48,7 +48,7 @@
         </StackPanel>
 
         <StackPanel>
-            <TextBlock Text="Ilość sztuk dostępnych do wypożyczenia:"
+            <TextBlock Text="Ilość sztuk dostępnych do wypożyczenia: 22"
                        FontSize="15"
                        Foreground="#2F4858"
                        FontFamily="Poppins"
@@ -59,7 +59,7 @@
         </StackPanel>
 
         <StackPanel>
-            <TextBlock Text="Ilość sztuk dostępnych do kupienia:"
+            <TextBlock Text="Ilość sztuk dostępnych do kupienia: 63"
                        FontSize="15"
                        Foreground="#2F4858"
                        FontFamily="Poppins"
@@ -86,6 +86,24 @@
                         Style="{StaticResource ButtonStyle}"
                         x:Name="addToCartButton"
                         Click="AddToCartButton_Click"/>
+            </Border>
+        </StackPanel>
+
+        <StackPanel>
+
+            <Border Background="#2F4858"
+                    Width="70"
+                    Height="50"
+                    CornerRadius="20"
+                    VerticalAlignment="Bottom"
+                    Margin="-230,360,0,0">
+                <Button Background="Transparent"
+                        BorderThickness="0"
+                        Content="349.99"
+                        Foreground="white"
+                        FontFamily="Poppins"
+                        FontSize="16"
+                        Style="{StaticResource ButtonStyle}"/>
             </Border>
         </StackPanel>
 
