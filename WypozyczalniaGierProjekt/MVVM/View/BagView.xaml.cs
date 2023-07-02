@@ -20,7 +20,7 @@ namespace WypozyczalniaGierProjekt.MVVM.View
             DataContext = viewModel;
         }
 
-        private async void PotwierdzButton_Click(object sender, RoutedEventArgs e)
+        private void PotwierdzButton_Click(object sender, RoutedEventArgs e)
         {
             // Sprawdzanie wypełnienia pól przed potwierdzeniem
             if (string.IsNullOrWhiteSpace(viewModel.Imie) ||

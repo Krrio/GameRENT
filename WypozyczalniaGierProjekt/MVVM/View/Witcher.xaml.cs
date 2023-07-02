@@ -23,6 +23,9 @@ namespace WypozyczalniaGierProjekt.MVVM.View
 
         private int availableQuantity = 63;
 
+        private decimal totalPrice = 0;
+
+
         public Witcher()
         {
             InitializeComponent();
@@ -36,6 +39,9 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+            totalPrice += 349.99m;
+
+            totalPriceTextBlock.Text = "Suma Twojego koszyka: " + totalPrice.ToString();
 
             int quantity = 1;
 
