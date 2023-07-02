@@ -9,6 +9,10 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
 {
     public abstract class ViewModelBase : INotifyPropertyChanged
     {
+        /// <summary>
+        /// It implements an interface that defines an event used for notifying about changes in the view's properties.
+        /// </summary>
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         public void OnPropertyChanged(string propertyName)

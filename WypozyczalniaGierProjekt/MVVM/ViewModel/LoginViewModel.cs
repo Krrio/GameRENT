@@ -83,12 +83,19 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
         public ICommand RememberPasswordCommand { get; }
 
         //Constructor
+        /// <Summary>
+        /// The UserRepository object is responsible for managing users.
+        /// </Summary>
         public LoginViewModel()
         {
             userRepository = new UserRepository();
             LoginCommand = new ViewModelCommand(ExecuteLoginCommand, CanExecuteLoginCommand);
             RecoverPasswordCommand = new ViewModelCommand(p=>ExecuteRecoverPassCommand("",""));
         }
+
+        /// <Summary>
+        /// It checks whether the login credentials entered by the user are correct.
+        /// </Summary>
 
         private bool CanExecuteLoginCommand(object obj)
         {
@@ -100,6 +107,10 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
                 validData = true;
             return validData;
         }
+
+        /// <Summary>
+        /// It performs the logic of user authentication using the UserRepository object. If the authentication is successful, a new object is created.
+        /// </Summary>
 
         private void ExecuteLoginCommand(object obj)
         {

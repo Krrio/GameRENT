@@ -7,6 +7,9 @@ using System.Data.SqlClient;
 
 namespace WypozyczalniaGierProjekt.Repositories
 {
+    /// <summary>
+    /// Connection with DataBase 
+    /// </summary>
     public abstract class RepositoryBase
     {
         private readonly string _connectionString;

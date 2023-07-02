@@ -17,6 +17,10 @@ namespace WypozyczalniaGierProjekt.Repositories
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// The method is used for user authentication based on the provided credentials. The method establishes a connection to the database and executes an SQL query to check if a user with the given username and password exists.
+        /// </summary>
+
         public bool AuthenticateUser(NetworkCredential credential)
         {
             bool validUser;

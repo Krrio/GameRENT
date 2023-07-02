@@ -22,6 +22,10 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
 
         public ViewModelCommand(Action<object> executeAction, Predicate<object> canExecuteAction)
         {
+            /// <summary>
+            /// The _executeAction holds a delegate to the method that will be executed when the command is executed, while _canExecuteAction holds a delegate to the method that determines whether the command can be executed at a given moment.
+            /// </summary>
+           
             _executeAction = executeAction;
             _canExecuteAction = canExecuteAction;
         }
@@ -34,6 +38,11 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
         }
 
         //Methods
+
+        /// <summary>
+        /// It checks whether the command can be executed at a given moment.
+        /// <returns></returns>
+        
         public bool CanExecute(object parameter)
         {
             return _canExecuteAction==null ? true : _canExecuteAction(parameter);
