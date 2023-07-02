@@ -4,6 +4,7 @@ using WypozyczalniaGierProjekt.MVVM.ViewModel;
 using System.Windows.Media.Animation;
 using System.Windows.Media;
 using System;
+using System.Data.SqlClient;
 
 namespace WypozyczalniaGierProjekt.MVVM.View
 {
@@ -69,6 +70,44 @@ namespace WypozyczalniaGierProjekt.MVVM.View
 
                 //MessageBox.Show("Dane zostały potwierdzone.", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
             }
+
+        }
+
+        private void PotwierdzButton_Click(object sender, RoutedEventArgs e)
+        {
+            string connectionString = "Server=(local)\\SQLEXPRESS; Database=MVVMLoginDb; Integrated Security=true";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string insertQuery = "INSERT INTO ShoppingForm (Imię, Nazwisko, Miejscowość, [Kod pocztowy], Ulica, [Numer mieszkania], Email, [Numer telefonu]) VALUES (@Imię, @Nazwisko, @Miejscowość, @KodPocztowy, @Ulica, @NumerMieszkania, @Email, @NumerTelefonu)";
+
+                using (SqlCommand command = new SqlCommand(insertQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@Imię", viewModel.Imie);
+                    command.Parameters.AddWithValue("@Nazwisko", viewModel.Nazwisko);
+                    command.Parameters.AddWithValue("@Miejscowość", viewModel.Miejscowosc);
+                    command.Parameters.AddWithValue("@KodPocztowy", viewModel.KodPocztowy);
+                    command.Parameters.AddWithValue("@Ulica", viewModel.Ulica);
+                    command.Parameters.AddWithValue("@NumerMieszkania", viewModel.NumerMieszkania);
+                    command.Parameters.AddWithValue("@Email", viewModel.Email);
+                    command.Parameters.AddWithValue("@NumerTelefonu", viewModel.NumerTelefonu);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+
+            // Wyczyść pola formularza po dodaniu danych do bazy danych
+            viewModel.Imie = string.Empty;
+            viewModel.Nazwisko = string.Empty;
+            viewModel.Miejscowosc = string.Empty;
+            viewModel.KodPocztowy = string.Empty;
+            viewModel.Ulica = string.Empty;
+            viewModel.NumerMieszkania = string.Empty;
+            viewModel.Email = string.Empty;
+            viewModel.NumerTelefonu = string.Empty;
         }
     }
+
 }

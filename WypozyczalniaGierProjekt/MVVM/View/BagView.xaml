@@ -183,7 +183,7 @@
                                 FontWeight="Medium"
                                 Foreground="White"
                                 Margin="0,10,0,0"
-                                Click="ConfirmButton_Click"
+                                Click="PotwierdzButton_Click" 
                                 Command="{Binding ConfirmViewCommand}">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
