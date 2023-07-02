@@ -21,6 +21,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class Cyberpunk : UserControl
     {
+        private decimal totalPrice = 0;
+
         private int availableQuantity = 2077;
         public Cyberpunk()
         {
@@ -34,6 +36,10 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+            totalPrice += 299.99m;
+
+            totalPriceTextBlock.Text = "Suma Twojego koszyka: " + totalPrice.ToString();
+
 
             int quantity = 1;
 

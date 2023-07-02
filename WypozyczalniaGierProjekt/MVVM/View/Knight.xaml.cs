@@ -21,6 +21,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class Knight : UserControl
     {
+        private decimal totalPrice = 0;
+
         private int availableQuantity = 44;
         public Knight()
         {
@@ -34,6 +36,11 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+
+            totalPrice += 119.99m;
+
+            totalPriceTextBlock.Text = "Suma Twojego koszyka: " + totalPrice.ToString();
+
 
             int quantity = 1;
 

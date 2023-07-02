@@ -21,6 +21,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class Fable : UserControl
     {
+        private decimal totalPrice = 0;
+
         private int availableQuantity = 84;
         public Fable()
         {
@@ -34,6 +36,9 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+            totalPrice += 249.99m;
+
+            totalPriceTextBlock.Text = "Suma Twojego koszyka: " + totalPrice.ToString();
 
             int quantity = 1;
 

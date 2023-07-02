@@ -23,6 +23,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     {
         private int availableQuantity = 43;
 
+        private decimal totalPrice = 0;
+
         public Subnautica()
         {
             InitializeComponent();
@@ -35,6 +37,10 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+            totalPrice += 139.99m;
+
+            totalPriceTextBlock.Text = "Suma Twojego koszyka: " + totalPrice.ToString();
+
 
             int quantity = 1;
 

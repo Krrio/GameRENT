@@ -21,6 +21,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class Spiderman : UserControl
     {
+        private decimal totalPrice = 0;
+
         private int availableQuantity = 89;
         public Spiderman()
         {
@@ -34,6 +36,11 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+            totalPrice += 269.99m;
+
+            totalPriceTextBlock.Text = "Suma Twojego koszyka: " + totalPrice.ToString();
+
+
             int quantity = 1;
 
             if (availableQuantity > 0)

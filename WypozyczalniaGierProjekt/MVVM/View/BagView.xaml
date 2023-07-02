@@ -334,13 +334,14 @@
                 Margin="250,-1350,0,0"
                 Background="#4E3087"
                 CornerRadius="20">
-            <TextBlock Text="Wartość koszyka: "
+            <TextBlock Text="0"
                        Foreground="#8473F5"
                        FontSize="15"
                        FontWeight="Medium"
                        FontFamily="Poppins"
                        TextAlignment="Left"
-                       Margin="10,15,0,0"/>
+                       Margin="10,15,0,0"
+                       x:Name="BagCard"/>
 
         </Border>
 

@@ -21,6 +21,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class Hogwarts : UserControl
     {
+        private decimal totalPrice = 0;
+
         private int availableQuantity = 65;
         public Hogwarts()
         {
@@ -35,6 +37,11 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
             int quantity = 1;
+
+            totalPrice += 229.99m;
+
+            totalPriceTextBlock.Text = "Suma Twojego koszyka: " + totalPrice.ToString();
+
 
             if (availableQuantity > 0)
             {

@@ -21,6 +21,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class Diablo : UserControl
     {
+        private decimal totalPrice = 0;
+
         private int availableQuantity = 192;
         public Diablo()
         {
@@ -34,6 +36,10 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+            totalPrice += 299.99m;
+
+            totalPriceTextBlock.Text = "Suma Twojego koszyka: " + totalPrice.ToString();
+
             int quantity = 1;
 
             if (availableQuantity > 0)

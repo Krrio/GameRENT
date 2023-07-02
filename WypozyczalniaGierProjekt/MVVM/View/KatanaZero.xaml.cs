@@ -21,6 +21,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class KatanaZero : UserControl
     {
+        private decimal totalPrice = 0;
+
         private int availableQuantity = 17;
 
         public KatanaZero()
@@ -35,6 +37,11 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+            totalPrice += 79.99m;
+
+            totalPriceTextBlock.Text = "Suma Twojego koszyka: " + totalPrice.ToString();
+
+
             int quantity = 1;
 
             if (availableQuantity > 0)

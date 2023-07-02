@@ -61,6 +61,18 @@
         </StackPanel>
 
         <StackPanel>
+            <TextBlock Text="Suma Twojego koszyka: 0"
+                       FontSize="15"
+                       Foreground="#2F4858"
+                       FontFamily="Poppins"
+                       FontWeight="Medium"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Margin="-580,220,0,0"
+                       x:Name="totalPriceTextBlock"/>
+        </StackPanel>
+
+        <StackPanel>
 
             <Border Background="#2F4858"
                     Width="150"
@@ -87,7 +99,7 @@
                     Height="50"
                     CornerRadius="20"
                     VerticalAlignment="Bottom"
-                    Margin="-230,360,0,0">
+                    Margin="80,300,0,0">
                 <Button Background="Transparent"
                         BorderThickness="0"
                         Content="199.99"

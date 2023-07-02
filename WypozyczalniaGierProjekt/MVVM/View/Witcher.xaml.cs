@@ -26,6 +26,7 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         private decimal totalPrice = 0;
 
 
+
         public Witcher()
         {
             InitializeComponent();

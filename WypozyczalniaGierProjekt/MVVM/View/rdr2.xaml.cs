@@ -21,6 +21,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class rdr2 : UserControl
     {
+        private decimal totalPrice = 0;
+
         private int availableQuantity = 129;
 
         public rdr2()
@@ -35,6 +37,10 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+            totalPrice += 199.99m;
+
+            totalPriceTextBlock.Text = "Suma Twojego koszyka: " + totalPrice.ToString();
+
 
             int quantity = 1;
 

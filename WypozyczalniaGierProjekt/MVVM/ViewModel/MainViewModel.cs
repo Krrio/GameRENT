@@ -20,7 +20,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
         public RelayCommand BagViewCommand { get; set; }
         public RelayCommand ConfirmViewCommand { get; set; }
         public RelayCommand CollectionViewCommand { get; set; }
-        public RelayCommand UserViewCommand { get; set; }
+        public RelayCommand UserViewCommand1 { get; set; }
 
         /// <summary>
         /// Each of the views is an instance of the corresponding ViewModel class, which is responsible for the logic and state of that particular view.
@@ -31,7 +31,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
         public BagViewModel BagVM { get; set; }
         public ConfirmViewModel ConfirmVM { get; set; }
         public CollectionViewModel CollectionVM { get; set; }
-        public UserViewModel UserVM { get; set; }
+        public UserViewModel1 UserVM1 { get; set; }
 
         /// <summary>
         /// The CurrentView property stores the currently displayed view. When the value of this property changes, the OnPropertyChanged method is called, which notifies the view about the value change and performs the necessary update of the user interface.
@@ -55,7 +55,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
             BagVM = new BagViewModel();
             ConfirmVM = new ConfirmViewModel();
             CollectionVM = new CollectionViewModel();
-            UserVM = new UserViewModel();
+            UserVM1 = new UserViewModel1();
 
             /// <summary>
             /// The constructor of the MainViewModel class initializes all the views and assigns the default view to the CurrentView property. It also creates instances of the RelayCommand objects.
@@ -88,10 +88,10 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
                 CurrentView = CollectionVM;
             });
 
-            UserViewCommand = new RelayCommand(o =>
+            UserViewCommand1 = new RelayCommand(o =>
             {
-                CurrentView = UserVM;
-            });           
+                CurrentView = UserVM1;
+            });
         }
     }
 }

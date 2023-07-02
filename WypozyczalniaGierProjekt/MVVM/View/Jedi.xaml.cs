@@ -21,6 +21,9 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class Jedi : UserControl
     {
+
+        private decimal totalPrice = 0;
+
         private int availableQuantity = 172;
         public Jedi()
         {
@@ -35,6 +38,11 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+
+            totalPrice += 299.99m;
+
+            totalPriceTextBlock.Text = "Suma Twojego koszyka: " + totalPrice.ToString();
+
             int quantity = 1;
 
             if (availableQuantity > 0)

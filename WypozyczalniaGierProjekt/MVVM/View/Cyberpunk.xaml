@@ -55,8 +55,20 @@
                        FontWeight="Medium"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
-                       Margin="355,300,0,0"
+                       Margin="355,310,0,0"
                        x:Name="AvailableQuantityTextBlock"/>
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock Text="Suma Twojego koszyka: 0"
+                       FontSize="15"
+                       Foreground="#2F4858"
+                       FontFamily="Poppins"
+                       FontWeight="Medium"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Margin="250,280,0,0"
+                       x:Name="totalPriceTextBlock"/>
         </StackPanel>
 
         <StackPanel>

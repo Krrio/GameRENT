@@ -34,9 +34,10 @@
                 <view:CollectionView/>
             </DataTemplate>
             
-            <DataTemplate DataType="{x:Type viewModel:UserViewModel}">
-                <view:UserView/>
+            <DataTemplate DataType="{x:Type viewModel:UserViewModel1}">
+                <view:UserView1/>
             </DataTemplate>
+
 
         </ResourceDictionary>
     </Application.Resources>

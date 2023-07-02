@@ -21,6 +21,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class Stray : UserControl
     {
+        private decimal totalPrice = 0;
+
         private int availableQuantity = 28;
         public Stray()
         {
@@ -34,6 +36,12 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+            totalPrice += 119.99m;
+
+            totalPriceTextBlock.Text = "Suma Twojego koszyka: " + totalPrice.ToString();
+
+
+
             int quantity = 1;
 
             if (availableQuantity > 0)

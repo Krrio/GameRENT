@@ -23,6 +23,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     {
         private int availableQuantity = 32;
 
+        private decimal totalPrice = 0;
+
         public som()
         {
             InitializeComponent();
@@ -35,6 +37,11 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+
+            totalPrice += 39.99m;
+
+            totalPriceTextBlock.Text = "Suma Twojego koszyka: " + totalPrice.ToString();
+
 
             int quantity = 1;
 

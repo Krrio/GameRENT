@@ -21,6 +21,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
     /// </summary>
     public partial class gow : UserControl
     {
+        private decimal totalPrice = 0;
+
         private int availableQuantity = 41;
         public gow()
         {
@@ -34,6 +36,9 @@ namespace WypozyczalniaGierProjekt.MVVM.View
         }
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
+            totalPrice += 139.99m;
+
+            totalPriceTextBlock.Text = "Suma Twojego koszyka: " + totalPrice.ToString();
 
             int quantity = 1;
 
