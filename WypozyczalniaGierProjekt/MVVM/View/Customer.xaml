@@ -1,0 +1,101 @@
+﻿<UserControl x:Class="WypozyczalniaGierProjekt.MVVM.View.Customer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WypozyczalniaGierProjekt.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Wypełnij formularz&#x0a;...i ciesz się korzyściami stałego klienta!"
+                                   Foreground="White"
+                                   FontSize="26"
+                                   Margin="20,10,10,0"
+                                   FontFamily="/Fonts/#Poppins"/>
+
+            <TextBlock Text="Wypełnij dane a my zajmiemy się resztą."
+                                   Foreground="White"
+                                   FontSize="16.5"
+                                   Margin="20,10,10,0"
+                                   FontFamily="/Fonts/#Poppins"/>
+
+            <TextBox Width="150"
+         Height="40"
+         VerticalContentAlignment="Center"
+         HorizontalAlignment="Left"
+         Margin="15,20,0,0"
+         Style="{StaticResource ModernForm}"
+         Tag="Imię"
+         FontFamily="/Fonts/#Poppins"
+                     x:Name="ImieTextBox"/>
+
+
+            <TextBox Width="150"
+         Height="40"
+         VerticalContentAlignment="Center"
+         HorizontalAlignment="Left"
+         Margin="15,20,0,0"
+         Style="{StaticResource ModernForm}"
+         Tag="Nazwisko"
+         FontFamily="/Fonts/#Poppins"
+         x:Name="NazwiskoTextBox"/>
+        
+            <TextBox Width="150"
+         Height="40"
+         VerticalContentAlignment="Center"
+         HorizontalAlignment="Left"
+         Margin="15,20,0,0"
+         Style="{StaticResource ModernForm}"
+         Tag="Adres"
+         FontFamily="/Fonts/#Poppins"
+         x:Name="AdresTextBox"/>
+
+            <TextBox Width="150"
+         Height="40"
+         VerticalContentAlignment="Center"
+         HorizontalAlignment="Left"
+         Margin="15,20,0,0"
+         Style="{StaticResource ModernForm}"
+         Tag="Telefon"
+         FontFamily="/Fonts/#Poppins"
+         x:Name="TelefonTextBox"/>
+
+            <TextBox Width="150"
+         Height="40"
+         VerticalContentAlignment="Center"
+         HorizontalAlignment="Left"
+         Margin="15,20,0,0"
+         Style="{StaticResource ModernForm}"
+         Tag="E-mail"
+         FontFamily="/Fonts/#Poppins"
+         x:Name="EmailTextBox"/>
+
+            <Image Source="/Images/gaming.png"
+                   Width="400"
+                   Height="400"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Margin="400,-380,0,0"/>
+
+            <Border Background="#8473F5"
+                    Width="150"
+                    Height="50"
+                    CornerRadius="20"
+                    VerticalAlignment="Top"
+                    Margin="0,-70,0,0">
+                <Button Background="Transparent"
+                        BorderThickness="0"
+                        Content="Zaakceptuj"
+                        Foreground="white"
+                        FontFamily="Poppins"
+                        FontSize="16"
+                        x:Name="customerButtonClick"
+                        Click="Customer_Button_Click"
+                        Style="{StaticResource ButtonStyle}"/>
+            </Border>
+
+        </StackPanel>
+
+    </Grid>
+</UserControl>

@@ -21,6 +21,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
         public RelayCommand ConfirmViewCommand { get; set; }
         public RelayCommand CollectionViewCommand { get; set; }
         public RelayCommand UserViewCommand1 { get; set; }
+        public RelayCommand CustomerViewCommand { get; set; }
 
         /// <summary>
         /// Each of the views is an instance of the corresponding ViewModel class, which is responsible for the logic and state of that particular view.
@@ -32,6 +33,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
         public ConfirmViewModel ConfirmVM { get; set; }
         public CollectionViewModel CollectionVM { get; set; }
         public UserViewModel1 UserVM1 { get; set; }
+        public CustomerViewModel CustomerVM { get; set; }
 
         /// <summary>
         /// The CurrentView property stores the currently displayed view. When the value of this property changes, the OnPropertyChanged method is called, which notifies the view about the value change and performs the necessary update of the user interface.
@@ -56,6 +58,7 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
             ConfirmVM = new ConfirmViewModel();
             CollectionVM = new CollectionViewModel();
             UserVM1 = new UserViewModel1();
+            CustomerVM = new CustomerViewModel();
 
             /// <summary>
             /// The constructor of the MainViewModel class initializes all the views and assigns the default view to the CurrentView property. It also creates instances of the RelayCommand objects.
@@ -88,10 +91,10 @@ namespace WypozyczalniaGierProjekt.MVVM.ViewModel
                 CurrentView = CollectionVM;
             });
 
-            UserViewCommand1 = new RelayCommand(o =>
+            CustomerViewCommand = new RelayCommand(o =>
             {
-                CurrentView = UserVM1;
+                CurrentView = CustomerVM;
             });
         }
-    };
+    }
 }

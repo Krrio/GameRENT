@@ -58,6 +58,7 @@
     <Compile Include="MVVM\ViewModel\BagViewModel.cs" />
     <Compile Include="MVVM\ViewModel\CollectionViewModel.cs" />
     <Compile Include="MVVM\ViewModel\ConfirmViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\CustomerViewModel.cs" />
     <Compile Include="MVVM\ViewModel\UserViewModel1.cs" />
     <Compile Include="MVVM\ViewModel\WitcherViewModel.cs" />
     <Compile Include="MVVM\View\BagView.xaml.cs">
@@ -68,6 +69,9 @@
     </Compile>
     <Compile Include="MVVM\View\ConfirmView.xaml.cs">
       <DependentUpon>ConfirmView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\Customer.xaml.cs">
+      <DependentUpon>Customer.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\Cyberpunk.xaml.cs">
       <DependentUpon>Cyberpunk.xaml</DependentUpon>
@@ -159,6 +163,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\ConfirmView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\Customer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -557,6 +565,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\gaming.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
