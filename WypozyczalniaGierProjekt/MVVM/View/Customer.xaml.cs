@@ -56,6 +56,13 @@ namespace WypozyczalniaGierProjekt.MVVM.View
                     command.ExecuteNonQuery();
 
                     MessageBox.Show("Witamy w klubie Stałych Klientów.");
+
+                    // Ustaw pola jako nieedytowalne
+                    ImieTextBox.IsReadOnly = true;
+                    NazwiskoTextBox.IsReadOnly = true;
+                    AdresTextBox.IsReadOnly = true;
+                    TelefonTextBox.IsReadOnly = true;
+                    EmailTextBox.IsReadOnly = true;
                 }
                 catch (Exception ex)
                 {
@@ -71,6 +78,7 @@ namespace WypozyczalniaGierProjekt.MVVM.View
                 MessageBox.Show("Proszę wypełnić wszystkie pola formularza.");
             }
         }
+
 
         private bool AreAllFieldsFilled()
         {
