@@ -6,6 +6,7 @@ using System.Windows.Media;
 using System;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
+using System.Text;
 
 namespace WypozyczalniaGierProjekt.MVVM.View
 {
@@ -18,6 +19,8 @@ namespace WypozyczalniaGierProjekt.MVVM.View
             InitializeComponent();
             viewModel = new BagViewModel();
             DataContext = viewModel;
+            LoadAddedTitles();
+            SumAddedTitles();
         }
 
         private void PotwierdzButton_Click(object sender, RoutedEventArgs e)
@@ -105,6 +108,64 @@ namespace WypozyczalniaGierProjekt.MVVM.View
                 MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
                 mainWindow.Content = userControl2;
 
+            }
+
+        }
+        private void LoadAddedTitles()
+        {
+            try
+            {
+                string connectionString = "Server=(local)\\SQLEXPRESS; Database=MVVMLoginDb; Integrated Security=true";
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string query = "SELECT Tytuł FROM Koszyk";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    StringBuilder titlesBuilder = new StringBuilder();
+                    while (reader.Read())
+                    {
+                        string title = reader.GetString(0);
+                        titlesBuilder.AppendLine(title);
+                    }
+
+                    DodaneTytulyTextBlock.Text = titlesBuilder.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Wystąpił błąd podczas wczytywania tytułów: " + ex.Message);
+            }
+        }
+
+        private void SumAddedTitles()
+        {
+            decimal sumaCen = 0;
+            try
+            {
+                string connectionString = "Server=(local)\\SQLEXPRESS; Database=MVVMLoginDb; Integrated Security=true";
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string query = "SELECT Cena FROM Koszyk";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        decimal cena = reader.GetDecimal(0);
+                        sumaCen += cena;
+                    }
+
+                    DodaneCenyTextBlock.Text = sumaCen.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Wystąpił błąd podczas wczytywania cen: " + ex.Message);
             }
         }
     }

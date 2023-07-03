@@ -152,7 +152,7 @@
                    FontFamily="Poppins"
                    TextAlignment="Center"
                    VerticalAlignment="Center"
-                   Padding="12"/>
+                   Padding="15"/>
         </Border>
 
     </Grid>

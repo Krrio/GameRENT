@@ -53,7 +53,7 @@ namespace WypozyczalniaGierProjekt.MVVM.View
             }
 
             // Pobierz dane gry, które chcesz dodać do bazy danych
-            string tytul = "Diablo I4V";
+            string tytul = "Diablo IV";
             decimal cena = 349.99m;
             DateTime dataKupienia = DateTime.Now;
 
