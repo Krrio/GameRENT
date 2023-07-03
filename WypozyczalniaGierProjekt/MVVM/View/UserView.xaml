@@ -14,6 +14,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Border Grid.Row="0" Background="#4E3087" CornerRadius="10" Margin="0,20,0,0">
@@ -141,6 +142,18 @@
                    VerticalAlignment="Center"
                  Margin="70,20,0,0"
                  BorderThickness="0"/>
+
+        <Border Grid.Row="5" Background="#300020" CornerRadius="10" Margin="0,20,0,0">
+            <TextBlock Text="Dołącz do Stałych Klientów aby otrzymać dostęp do Panelu Stałego Klienta"
+                   Height="50"
+                   Foreground="white"
+                   FontSize="18"
+                   FontWeight="Medium"
+                   FontFamily="Poppins"
+                   TextAlignment="Center"
+                   VerticalAlignment="Center"
+                   Padding="12"/>
+        </Border>
 
     </Grid>
 </UserControl>
