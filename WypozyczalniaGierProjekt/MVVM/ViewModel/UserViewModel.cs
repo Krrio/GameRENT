@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WypozyczalniaGierProjekt.MVVM.ViewModel
 {
-    internal class UserViewModel1
+    internal class UserViewModel
     {
     }
 }

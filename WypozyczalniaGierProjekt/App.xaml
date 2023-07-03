@@ -38,6 +38,10 @@
                 <view:Customer/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:UserViewModel}">
+                <view:UserView/>
+            </DataTemplate>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>
